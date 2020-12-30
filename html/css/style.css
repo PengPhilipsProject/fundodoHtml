@@ -25,60 +25,9 @@ ul#menu li a,ul#menu li a.login_btn,.banner_content_text h3,.bread_crumb,ul.news
 ul.register_member_btn li > a.disagree_btn {font-family: 'Noto Sans TC',sans-serif;}
 .header_content h1 img.Header_logo,ul#menu li a,ul.news_box li img,.footer_content img.Footer_logo,
 ul.footer_menu_list li a,img.modal_close_icon {transition: .5s opacity ease-in-out;}
-.header_content h1 img.Header_logo:hover,.footer_content img.Footer_logo:hover {opacity: .7;}
 ul#menu li a,.bread_crumb,.bread_crumb a,.fa-home,ul.news_box li h3,.footer_content,ul.footer_contact li a,
 ul.footer_menu_list li a,.loginModal h3,.forgetPswModal h3,.registerRuleModal h3,.registerModal h3,
 .register_member_text p,ul.login_modal_link li a,.house_platform_intro p {color: #0d0a0a;}
-ul.news_box li:last-child,ul.news_box li:nth-last-child(2),ul.news_box li:nth-last-child(3) {margin-bottom: 0;}
-.loginModal h3,.forgetPswModal h3,.registerRuleModal h3,.registerModal h3,
-.contactModal h3 {border-bottom: 1px solid #d3d3d3; font-size: 24px; font-weight: 500; padding-bottom: 14px;}
-.loginModal,.forgetPswModal,.registerRuleModal,.registerModal,.contactModal {
-    background: #fff;
-    border-radius: 12px;
-    display: none;
-    left: 50%;
-    margin: 100px auto 0 auto;
-    padding: 48px 40px 58px 40px;
-    position: absolute;
-	transform: translate3d(-50%,0,0);
-    width: 450px;
-    z-index: 3000;
-}
-.form_text input[type="text"],.form_text input[type="tel"],
-.form_text input[type="email"],.form_text textarea {margin-top: 20px; outline: none; padding: 10px; width: 100%;}
-.loginModal input[name="login_number"],.loginModal input[name="login_psw"],
-.forgetPswModal input[name="forget_psw_number"],.forgetPswModal input[name="forget_psw_email"],
-.forgetPswModal input[name="forget_psw_psw"],.forgetPswModal input[name="forget_psw_confirm_psw"],
-.registerModal input[name="register_name"],.registerModal input[name="register_number"],
-.registerModal input[name="register_password"],.registerModal input[name="register_phone"],
-.registerModal input[name="register_email"],.registerModal input[name="register_address"],
-.contactModal input[name="contact_title"],.contactModal input[name="contact_name"],
-.contactModal input[name="contact_phone"],.contactModal input[name="contact_email"],
-.contactModal textarea[name="contact_detail"] {
-    background: #f5f5f5; 
-    border: none; 
-    font-size: 16px;
-    margin-top: 26px;
-    outline: none; 
-    padding: 14px; 
-    position: relative;
-    resize: none;
-    width: 100%;
-}
-ul.register_member_btn li > a.agree_btn,ul.register_member_btn li > a.disagree_btn {
-    background: #ff5c49; 
-    border-radius: 58px;
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    height: 46px; 
-    line-height: 42px;
-    margin-top: 32px;
-    max-width: 160px;
-    text-align: center;
-    text-decoration: none;
-}
 .wrapper {position: relative;}
 .clearfix:after {clear: both; content: ""; display: block;}
 
@@ -100,12 +49,23 @@ ul.register_member_btn li > a.agree_btn,ul.register_member_btn li > a.disagree_b
     max-width: 240px; 
     opacity: 1;
 }
+.header_content h1 img.Header_logo:hover,.footer_content img.Footer_logo:hover {opacity: .7;}
 ul#menu {float: right;}
-ul#menu li {float: left; margin-right: 26.8px; padding-top: 1.2px;}
+ul#menu li {float: left; margin-right: 32px; padding-top: 1.2px;}
 ul#menu li a {font-size: 16px; font-weight: 400; text-decoration: none;}
 ul#menu li a:hover {opacity: .7;}
 ul#menu li img {display: block; height: auto; margin: 0 auto 10px auto;}
 ul#menu li:last-child {margin-right: 0;}
+ul#menu li a.login_btn {
+    background: #fe5c49;
+    color: #fff; 
+    font-size: 14px;
+    font-weight: 500; 
+    height: 32px;
+    line-height: 30px;
+    margin-top: -7px; 
+    width: 82px;
+}
 
 /* --Index--------------------------------- */
 .house_platform_intro h2 {color:  #ff5c49; font-size: 30px; padding-bottom: 38px; text-align: center;}
@@ -134,7 +94,7 @@ span.index_price {color: #ff5c49; font-size: 30px; font-weight: 400; letter-spac
 .index_class_speech_teacher p {line-height: 28px; text-align: justify;}
 
 /* --Banner & Bread_Crumb--------------------------------- */
-.index_banner_box {padding: 72px 0 55px 0;}
+.index_banner_box {padding: 74px 0 55px 0;}
 .index_banner_box img {height: auto; width: 100%;}
 .banner_box {color: #fe5c49; padding: 110px 0 55px 0; width: 100%;}
 .banner_content {
@@ -174,6 +134,8 @@ h2.knowledge_title {font-size: 28px; letter-spacing:1px; padding: 32px 0 2px 0;}
 ul.news_box,.news_detail_box {padding-top: 32px;}
 ul.news_box li {float: left; margin: 0 36px 56px 0; width: 376px;}
 ul.news_box li:nth-child(3n+3) {margin-right: 0;}
+ul.news_box li:last-child,ul.news_box li:nth-last-child(2),
+ul.news_box li:nth-last-child(3) {margin-bottom: 0;}
 ul.news_box li .news_photo {margin-bottom: 30px; position: relative; width: 372px;}
 ul.news_box li .news_photo_text {margin-top: -5px;}
 ul.news_box li img {
@@ -214,12 +176,15 @@ ul.news_box li h3 {font-size: 16px; font-weight: 400; line-height: 26px; margin-
 .news_article_text p:last-child {padding-bottom: 0;}
 
 /* --Online Class--------------------------------- */
-ul.online_class li {margin: 0 34px 58px 0;}
+ul.online_class li {margin: 0 34px 44px 0;}
+ul.online_class li .news_photo {margin-bottom: 14px;}
 
 /* --Speech--------------------------------- */
 .speech_form {margin-top: 40px; width: 100%;}
 .form_text {margin-top: 40px; width: 100%;}
 .form_radio_text {margin-top: 20px; width: 100%;}
+.form_text input[type="text"],.form_text input[type="tel"],
+.form_text input[type="email"],.form_text textarea {margin-top: 20px; outline: none; padding: 10px; width: 100%;}
 .form_text textarea {height: 260px; resize: none;}
 .form_text input[type="radio"] {margin-right: 4px;}
 a.speech_btn {
@@ -296,6 +261,18 @@ ul.social_icon li:last-child {margin-right: 0;}
     width: 100%; 
     z-index: 2000;
 }
+.loginModal,.forgetPswModal,.registerRuleModal,.registerModal,.contactModal {
+    background: #fff;
+    border-radius: 12px;
+    display: none;
+    left: 50%;
+    margin: 140px auto 0 auto;
+    padding: 48px 40px 58px 40px;
+    position: absolute;
+	transform: translate3d(-50%,0,0);
+    width: 450px;
+    z-index: 3000;
+}
 img.modal_close_icon {
     cursor: pointer; 
     height: 16px;
@@ -306,6 +283,26 @@ img.modal_close_icon {
     width: 16px;
 }
 img.modal_close_icon:hover {opacity: .7;}
+.loginModal h3,.forgetPswModal h3,.registerRuleModal h3,
+.registerModal h3,.contactModal h3 {border-bottom: 1px solid #d3d3d3; font-size: 24px; font-weight: 500; padding-bottom: 14px;}
+.loginModal input[name="login_number"],.loginModal input[name="login_psw"],
+.forgetPswModal input[name="forget_psw_number"],.forgetPswModal input[name="forget_psw_email"],
+.forgetPswModal input[name="forget_psw_psw"],.forgetPswModal input[name="forget_psw_confirm_psw"],
+.registerModal input[name="register_name"],.registerModal input[name="register_number"],
+.registerModal input[name="register_password"],.registerModal input[name="register_phone"],
+.registerModal input[name="register_email"],.registerModal input[name="register_address"],
+.contactModal input[name="contact_title"],.contactModal input[name="contact_name"],
+.contactModal input[name="contact_phone"],.contactModal input[name="contact_email"],
+.contactModal textarea[name="contact_detail"] {
+    background: #f5f5f5; 
+    border: none; 
+    margin-top: 26px;
+    outline: none; 
+    padding: 14px; 
+    position: relative;
+    width: 100%;
+}
+.contactModal textarea[name="contact_detail"] {height: 120px; resize: none;}
 ::placeholder {color: rgba(33,33,33,.65); font-weight: 400; letter-spacing: 0;}
 :-ms-input-placeholder {color: rgba(33,33,33,.65); font-weight: 400; letter-spacing: 0;}  
 ::-ms-input-placeholder {color: rgba(33,33,33,.65); font-weight: 400; letter-spacing: 0;}
@@ -314,7 +311,7 @@ a.login_btn {
     border-radius: 58px;
     color: #fff;
     display: block; 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     height: 46px; 
     line-height: 44px;
@@ -332,9 +329,22 @@ a.login_btn {
 ul.register_member_btn {margin: -4px auto 0 auto; max-width: 345px; width: 100%;}
 ul.register_member_btn li {float: left; margin-right: 24px; width: 160px;}
 ul.register_member_btn li:last-child {margin-right: 0;}
+ul.register_member_btn li > a.agree_btn,ul.register_member_btn li > a.disagree_btn {
+    background: #ff5c49; 
+    border-radius: 58px;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    height: 46px; 
+    line-height: 42px;
+    margin-top: 32px;
+    max-width: 160px;
+    text-align: center;
+    text-decoration: none;
+}
 ul.login_modal_link {margin: 24px auto 0 auto; max-width: 170px; width: 100%;}
 ul.login_modal_link li {float: left;}
 ul.login_modal_link li:first-child {border-right: 1px solid #d3d3d3; padding-right: 14px;}
 ul.login_modal_link li:last-child {padding-left: 18px;}
 ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
-.contactModal textarea[name="contact_detail"] {height: 120px;}

@@ -1,10 +1,6 @@
 // JavaScript Document
 $(function(){
-	const policy_btn = $(".policy_btn");
-	const rule_btn = $(".rule_btn");
-	const banner_text_h1 = $(".banner_text").find("h1");
-	const banner_icon = $("img.banner_icon");
-	const bread_page_name = $(".bread_crumb").find("span.page_name");
+	const $rule_detail_btn = $(".rule_detail_btn").find("li");
 
 	//Modal
 	$(".member_login_btn").on("click",function(){
@@ -38,11 +34,14 @@ $(function(){
 		$(".mask").hide();
 	});
 
-	//Go_Top
-	$("#go_top_btn").on("click",function(){
+	//Rule Btn
+	$(".rule_detail_btn").find("li").on("click",function(){
+		let $rule_detail_btn_place = $(this).find("a").attr("data-target");
+		$rule_detail_btn.removeClass("selected");
+		$(this).addClass("selected");
 		$("html,body").stop().animate({
-			scrollTop: header_box
-		}, 800);
+			scrollTop: $("#" + $rule_detail_btn_place).offset().top - 100
+		},800);
 		return false;
 	});
 });

@@ -169,7 +169,7 @@ ul.news_box li {float: left; margin: 0 36px 56px 0; width: 376px;}
 ul.news_box li:nth-child(3n+3) {margin-right: 0;}
 ul.news_box li:last-child,ul.news_box li:nth-last-child(2),
 ul.news_box li:nth-last-child(3) {margin-bottom: 0;}
-ul.news_box li .news_photo {margin-bottom: 30px; position: relative; width: 372px;}
+ul.news_box li .news_photo {margin-bottom: 20px; position: relative; width: 372px;}
 ul.news_box li .news_photo_text {margin-top: -5px;}
 ul.news_box li img {
     background-size: cover;

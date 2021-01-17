@@ -1,6 +1,28 @@
 // JavaScript Document
 $(function(){
+	const $mobile_menu = $(".mobile_menu");
+	const $mobile_header_nav = $(".mobile_header_nav");
 	const $rule_detail_btn = $(".rule_detail_btn").find("li");
+
+	//Mobile Menu
+	$mobile_menu.click(function(){
+		$(this).toggleClass("open");
+	});
+	$mobile_menu.on("click",menu_open);
+	function menu_open(){
+		$(".mobile_header").toggleClass("mobile_header_shadow");
+		$mobile_header_nav.slideToggle();
+	}
+	$(".mobile_header_nav").find("li").find("a.member_login_btn,a.member_contact_btn").on("click",function(){
+		$mobile_header_nav.hide();
+		$(".mobile_menu").removeClass("open");
+	});
+	$(window).on("resize",menu_style_clear);
+	function menu_style_clear(){
+		if($(window).innerWidth() > 1024){
+			$mobile_header_nav.attr("style","");
+		}
+	}
 
 	//Modal
 	$(".member_login_btn").on("click",function(){

@@ -122,7 +122,6 @@
                      <li><a href="question.html">常見問題</a></li>
                      <li><a href="rule.html">條款小站</a></li>
                      <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
-                     <li><a href="#">後臺管理</a></li>
                      <li><a class="member_login_btn" href="#">登入</a></li>
                      <li><a href="#">登出</a></li>
                   </ul>
@@ -150,68 +149,72 @@
                <img src="images/NewsInfo_photo.jpg" alt="消息照片" title="職場英文大補帖｜上班族的跨國會議必修課">
                 <div class="speech_form">
                     <form action="#">
-                       <div class="form_text">
-                           <p>姓名</p>
+                       <div class="form_text clearfix">
+                           <label class="form_text_title" for="speech_name">姓名</label>
                            <input type="text" id="speech_name" name="speech_name" placeholder="請輸入您的姓名">
                        </div>
-                       <div class="form_text">
-                           <p>電話</p>
+                       <div class="form_text clearfix">
+                           <label class="form_text_title" for="speech_phone">電話</label>
                            <input type="tel" id="speech_phone" name="speech_phone" placeholder="請輸入您的電話">
                        </div>
-                       <div class="form_text">
-                           <p>LINE ID</p>
+                       <div class="form_text clearfix">
+                           <label class="form_text_title" for="speech_line">LINE ID</label>
                            <input type="text" id="speech_line" name="speech_line" placeholder="請輸入您的LINE ID">
                        </div>
-                       <div class="form_text">
-                           <p>Email</p>
+                       <div class="form_text clearfix">
+                           <label class="form_text_title" for="speech_email">Email</label>
                            <input type="email" id="speech_email" name="speech_email" placeholder="請輸入您的電子信箱">
                        </div>
-                       <div class="form_text">
-                           <p>立馬參加分享說明會</p>
-                           <div class="form_radio_text">
-                              <input type="radio" id="taipei_place" name="taipei_place">
-                              <label for="age1">2/07 台南平日場 14：00-16：00</label>
-                           </div>
-                           <div class="form_radio_text">
-                              <input type="radio" id="taichung_place" name="taichung_place">
-                              <label for="age2">12/08 高雄平日場 14：00-16：00</label> 
-                           </div>
-                           <div class="form_radio_text">
-                              <input type="radio" id="tainan_place" name="tainan_place">
-                              <label for="age3">12/11 台北平日場 18：30-21：00</label>
-                           </div>
-                           <div class="form_radio_text">
-                              <input type="radio" id="kaohsiung_place" name="kaohsiung_place">
-                              <label for="age3">12/13 台中假日場 14：00-16：00</label>
-                           </div>
-                           <div class="form_radio_text">
-                              <input type="radio" id="kaohsiung_place" name="kaohsiung_place">
-                              <label for="age3">其他</label>
-                           </div>
-                           <input type="text">
+                       <div class="form_text clearfix">
+                           <p class="padding0">立馬參加分享說明會</p>
+                           <div class="form_radio_box clearfix">
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Tainan_place" name="Weekend_place" checked>
+                                 <label for="Tainan_place">2/07 台南平日場 14：00-16：00</label>
+                              </div>
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Kaohsiung_place" name="Weekend_place">
+                                 <label for="Kaohsiung_place">12/08 高雄平日場 14：00-16：00</label> 
+                              </div>
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Taipei_place" name="Weekend_place">
+                                 <label for="Taipei_place">12/11 台北平日場 18：30-21：00</label>
+                              </div>
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Taichung_place" name="Weekend_place">
+                                 <label for="Taichung_place">12/13 台中假日場 14：00-16：00</label>
+                              </div>
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Other_place" name="Weekend_place">
+                                 <label for="Other_place">其他</label>
+                              </div>  
+                              <input type="text">
+                              </div>
                         </div>
-                        <div class="form_text">
-                           <p>我對此房地產的課有興趣，但這次來不及，請下次再通知我~</p>
-                           <div class="form_radio_text">
-                              <input type="radio" id="taipei_place" name="taipei_place">
-                              <label for="age1">預約台北場</label>
-                           </div>
-                           <div class="form_radio_text">
-                              <input type="radio" id="taichung_place" name="taichung_place">
-                              <label for="age2">預約台中場</label> 
-                           </div>
-                           <div class="form_radio_text">
-                              <input type="radio" id="tainan_place" name="tainan_place">
-                              <label for="age3">預約台南場</label>
-                           </div>
-                           <div class="form_radio_text">
-                              <input type="radio" id="kaohsiung_place" name="kaohsiung_place">
-                              <label for="age3">預約高雄場</label>
+                        <div class="form_text clearfix">
+                           <p class="padding0">我對此房地產的課有興趣，但這次來不及，請下次再通知我~</p>
+                           <div class="form_radio_box clearfix">
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Reserve_Taipei_place" name="Reserve_place" checked>
+                                 <label for="Reserve_Taipei_place">預約台北場</label>
+                              </div>
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Reserve_Taichung_place" name="Reserve_place">
+                                 <label for="Reserve_Taichung_place">預約台中場</label> 
+                              </div>
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Reserve_Tainan_place" name="Reserve_place">
+                                 <label for="Reserve_Tainan_place">預約台南場</label>
+                              </div>
+                              <div class="form_radio_text">
+                                 <input type="radio" id="Reserve_Kaohsiung_place" name="Reserve_place">
+                                 <label for="Reserve_Kaohsiung_place">預約高雄場</label>
+                              </div>
                            </div>
                         </div>
-                        <div class="form_text">
-                           <p>請問從哪裡得知消息? 誰介紹你的?</p>
-                           <textarea id="detail" name="detail" placeholder="您的回答"></textarea>
+                        <div class="form_text clearfix">
+                           <label class="form_text_title mobile_form_textarea" for="textarea_text">請問是從哪裡得知消息? 誰介紹你的?</label>
+                           <textarea id="textarea_text" name="textarea_text" placeholder="您的回答"></textarea>
                         </div>
                      </form>
                      <a href="#" class="speech_btn">提交</a>
@@ -233,6 +236,7 @@
                      <li><a href="question.html">常見問題</a></li>
                      <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
                      <li><a href="rule.html">條款小站</a></li>
+                     <li><a href="#">後臺管理</a></li>
                   </ul>
                   <ul class="social_icon clearfix">
                      <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>

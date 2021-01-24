@@ -91,7 +91,7 @@ a.house_platform_intro_btn {
 .index_class_speech_teacher ul li:last-child {margin-right: 0;}
 .index_class_speech_teacher ul li img {margin-bottom: 8px;}
 .index_class_speech_teacher ul li h3 {font-size: 20px; font-weight: 400; line-height: 30px; margin: 8px 0;}
-.index_class_speech_teacher p {line-height: 28px; text-align: justify;}
+.index_class_speech_teacher p {font-size: 16px; line-height: 28px; text-align: justify;}
 span.index_price {color: #ff5c49; font-size: 30px; font-weight: 400; letter-spacing: 0;}
 
 /* --Banner & Bread_Crumb--------------------------------- */
@@ -134,37 +134,83 @@ span.banner_text_padding {padding-left: 16px;}
 
 /* --Speech--------------------------------- */
 .speech_form {margin-top: 40px; width: 100%;}
-.form_text {margin-top: 40px; width: 100%;}
-.form_text p {line-height: 26px;}
+.form_text {border-top: 1px solid #e3e3e3; padding: 30px 0; width: 100%;}
+.form_text:first-child {border-top: none; padding: 0 0 30px 0;}
+.form_text:last-child {padding: 30px 0 0 0;}
+.form_text label.form_text_title,.form_text p {float: left; line-height: 26px; padding-top: 10px; width: 240px;}
 .form_radio_text {margin-top: 20px; width: 100%;}
+.form_radio_text label {margin-right: 10px;}
+.form_radio_box {float: right; width: 940px;}
+.form_radio_box .form_radio_text:first-child {margin-top: 0;}
+.form_radio_box input[type="text"] {margin-top: 20px;}
 .form_text input[type="text"],.form_text input[type="tel"],
 .form_text input[type="email"],.form_text textarea {
+    background: #fbfbfb;
     border: 1px solid #e3e3e3;
+    border-radius: 6px;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-    margin-top: 20px; 
+    float: right;
+    max-width: 940px;
     outline: none; 
-    padding: 10px; 
+    padding: 12px 10px; 
     width: 100%;
 }
-.form_text textarea {height: 260px; resize: none;}
+.form_text textarea {height: 250px; resize: none;}
 .form_text input[type="radio"] {margin-right: 4px;}
+input[type="radio"]:checked,input[type="radio"]:not(:checked) {left: -9999px; position: absolute;}
+input[type="radio"]:checked + label,input[type="radio"]:not(:checked) + label {
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    padding-left: 28px;
+    position: relative;
+}
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+input[type="radio"]:checked + label:after,input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    background: #ff5c49;
+    border-radius: 100%;
+    height: 12px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: all 0.2s ease-out;
+    width: 12px;
+}
+input[type="radio"]:not(:checked) + label:after {opacity: 0; transform: scale(0);}
+input[type="radio"]:checked + label:after {opacity: 1; transform: scale(1);}
 a.speech_btn {
-    background: #ff5c49; 
-    border-radius: 8px;
+    background-color: #ff5c49; 
+    border-radius: 50px;
     color: #fff;
     display: block; 
     font-family: 'Noto Sans TC',sans-serif; 
     font-size: 18px;
     font-weight: 400;
-    height: 46px; 
-    line-height: 44px;
-    margin-top: 40px;
-    max-width: 120px;
+    height: 50px; 
+    line-height: 48px;
+    margin: 40px auto 0 auto;
+    max-width: 150px;
     text-align: center;
     text-decoration: none;
+    transition: transform .4s ease-out;
 }
+a.speech_btn:hover {transform: scale(1.14);}
 .member_box .speech_form,.speech_form .form_text:first-child {margin-top: 0;}
 .member_box a.speech_btn {margin-top: 32px;}
+.form_text p.padding0 {margin-top: -2px; padding: 0;}
 
 /* --Online Class--------------------------------- */
 ul.online_class li {margin: 0 34px 44px 0;}
@@ -235,7 +281,7 @@ ul.news_box li h3 {font-size: 16px; font-weight: 400; line-height: 26px; margin-
 	color: #fff;
 	float: left;
 	font-family: "Carlito";
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 600;
 	height: 46px;
 	line-height: 44px;
@@ -247,8 +293,26 @@ ul.news_box li h3 {font-size: 16px; font-weight: 400; line-height: 26px; margin-
 	color: #333;
 	float: left;
 	font-size: 20px; 
+    font-weight: 500;
+    padding-left: 58px;
+    position: relative;
+}
+.question_title h1:before {
+    content: "Q";
+	background:#fe5c49;
+	border-radius: 50%;
+	color: #fff;
+	float: left;
+	font-family: "Carlito";
+	font-size: 24px;
 	font-weight: 600;
-	margin-left: 18px;
+    height: 44px;
+    left: 0;
+	line-height: 42px;
+    margin-top: 14px;
+    position: absolute;
+	text-align: center; 
+	width: 44px;
 }
 .question_info {
 	border-bottom: 1px solid #e3e3e3;
@@ -258,26 +322,7 @@ ul.news_box li h3 {font-size: 16px; font-weight: 400; line-height: 26px; margin-
 	border-bottom-right-radius: 8px;
 	padding: 14px 28px 20px 28px;
 }
-.answer {
-	background:#008ec5; 
-	border-radius: 50%;
-	color: #fff;
-	float: left;
-	font-family: "Carlito";
-	font-size: 26px;
-	font-weight: 600;
-	height: 46px;
-	line-height: 44px;
-	text-align: center; 
-	width: 46px;
-}
-.question_info p {
-    float: left; 
-    font-size: 16px; 
-    line-height: 28px; 
-    margin: -44px 0 0 66px; 
-    width: 95%;
-}
+.question_info p {float: left; font-size: 16px; line-height: 28px; width: 100%;}
 
 /* --Rule--------------------------------- */
 ul.rule_detail_btn {margin: 26px 0;}
@@ -294,17 +339,18 @@ ul.rule_detail_btn li {
     text-align: center;
     width: 130px;
 }
-ul.rule_detail_btn li a {color: #9f9f9f; font-size: 16px; text-decoration: none;}
+ul.rule_detail_btn li a {color: #9f9f9f; font-size: 15px; text-decoration: none;}
 ul.rule_detail_btn li:last-child {margin-right: 0;}
 ul.rule_detail_btn li.selected {background: #fe5c49; border: none; color: #fff;}
 ul.rule_detail_btn li.selected a {color: #fff;}
 .user_rule {border-bottom: 2px solid #e3e3e3; padding-bottom: 26px;}
-.rule_detail_box h2 {font-size: 28px; margin: 26px 0 22px 0;}
+.rule_detail_box h2 {font-size: 28px; font-weight: 500; margin: 26px 0 22px 0;}
 .rule_detail_box h2 span.rule_point {color: #fe5c49;}
 .rule_detail_no {margin-top: 22px;}
 .rule_detail_box p {font-size: 16px; line-height: 30px;}
 ul.rule_list_text {margin-left: 18px;}
 ul.rule_list_text li {line-height: 30px;}
+h4.rule_detail_title {font-size: 16px; font-weight: 500; padding-bottom: 16px;}
 
 /* --Footer--------------------------------- */
 .footer_box {
@@ -338,7 +384,7 @@ ul.rule_list_text li {line-height: 30px;}
 ul.footer_contact {margin-top: 48px; max-width: 340px;} 
 ul.footer_contact li {font-size: 16px; font-weight: 400; line-height: 30px;}
 ul.footer_contact li a {text-decoration: none;}
-.footer_menu {float: right; margin-top: 4px; max-width: 555px;}
+.footer_menu {float: right; margin-top: 4px; width: 650px;}
 ul.footer_menu_list li {float: left; margin-right: 26px;}
 ul.footer_menu_list li:last-child {margin-right: 0;}
 ul.footer_menu_list li a {opacity: 1; text-decoration: none; transition: .5s opacity ease-in-out;}
@@ -456,18 +502,21 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     .mobile_header,.mobile_header_nav {display: none;}
 }
 @media screen and (max-width:1366px){
-    .desktop_header_box,.desktop_header_nav,.footer_box img.footer_wave,.footer_menu_list,
-    .question,.answer {display: none;}
-    .loginModal,.forgetPswModal,.registerRuleModal,.registerModal,.contactModal {margin: 105px auto 0 auto; padding: 28px; width: 300px;}
-    input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {font-size: 15px;}
-    input::-moz-placeholder,textarea::-moz-placeholder {font-size: 15px;}
-    input:-ms-input-placeholder,textarea:-ms-input-placeholder {font-size: 15px;}
+    .desktop_header_box,.desktop_header_nav,.footer_menu_list,.answer,
+    .footer_box img.footer_wave {display: none;}
+    .loginModal,.forgetPswModal,.registerRuleModal,.registerModal,.contactModal {margin: 105px auto 0 auto; padding: 28px 20px; width: 300px;}
+    input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,input::-moz-placeholder,textarea::-moz-placeholder,
+    input:-ms-input-placeholder,textarea:-ms-input-placeholder,.index_price_box,.footer_menu_list li a {font-size: 14px;}
+    .news_author p,.news_article_text p,.index_class_speech_teacher p,ul.rule_detail_btn li a,ul.rule_list_text li,.rule_detail_box p,.question_info p,
+    .form_text label,.form_text p.padding0,.form_radio_text,ul.footer_contact li {font-size: 14px; line-height: 26px;}
+    nav.mobile_header_nav li a,a.login_btn,.banner_content_text h3,.question_title h1,.house_platform_intro p,ul.news_box li h3,.index_class_speech_teacher ul li h3,a.speech_btn {font-size: 16px;}
+    .form_text input[type="text"],.form_text input[type="tel"],.form_text input[type="email"],.form_text textarea {float: none; max-width: none;}
     ul.register_member_btn {margin: 20px auto 0 auto;}
     ul.register_member_btn li {width: 100%;}
     ul.register_member_btn li > a.agree_btn {margin: 0 auto 20px auto;}
     ul.register_member_btn li > a.disagree_btn {margin: 0 auto;}
     ul.register_member_btn li > a.agree_btn, ul.register_member_btn li > a.disagree_btn,
-    a.login_btn {font-size: 16px; height: 42px; line-height: 40px;}
+    a.login_btn {height: 42px; line-height: 40px;}
     .register_member_text {height: 250px;}
     .mobile_header {
         background-color: rgb(255,255,255);
@@ -544,7 +593,6 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     nav.mobile_header_nav li a {
         color: #000;
         display: block;
-        font-size: 16px;
         font-weight: 400;
         height: 46px;
         letter-spacing: 1px;
@@ -575,9 +623,9 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     .index_banner_box {padding: 0;}
     .index_banner_box img {margin-top: 70px;}
     .bread_crumb {line-height: 24px;}
-    .container {padding: 40px 18px 0 18px;}
+    .container {padding: 30px 18px 0 18px;}
     .house_platform_intro h2,.index_class_speech_teacher h2 {font-size: 24px; padding-bottom: 24px;}
-    .house_platform_intro p {font-size: 15px; line-height: 29px;}
+    .house_platform_intro p {line-height: 24px;}
     a.house_platform_intro_btn {margin: 24px auto 0 auto;}
     .index_class_speech_teacher ul {margin: 0 auto;}
     .index_class_speech_teacher ul li {margin: 0 0 40px 0; width: 100%;}
@@ -590,42 +638,33 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     ul.news_box li:nth-last-child(2), ul.news_box li:nth-last-child(3) {margin-bottom: 40px;}
     ul.news_box li:last-child {margin-bottom: 0;}
     ul.news_box,.news_detail_box {padding-top: 24px;}
-    ul.news_box li h3 {font-size: 17px; line-height: 27px;}
-    .news_detail_box h2 {font-size: 25px; line-height: 35px; padding-bottom: 24px;}
+    ul.news_box li h3 {line-height: 26px;}
+    .news_detail_box h2 {font-size: 26px; font-weight: 500; line-height: 34px; padding-bottom: 22px;}
     .news_author {padding-top: 24px;}
     .news_author p.news_page_date {padding-bottom: 24px;}
     .news_article_text {padding-bottom: 40px;}
-    .news_article_text h3 {font-size: 25px; line-height: 35px;}
-    .news_article_text p {font-size: 15px; line-height: 29px; padding-bottom: 20px;}
-    .index_class_speech_teacher ul li h3 {font-size: 17px; line-height: 27px; margin: 3px 0;}
-    .index_class_speech_teacher p {font-size: 15px; line-height: 25px;}
+    .news_article_text h3 {font-size: 24px; line-height: 34px;}
+    .news_article_text p {padding-bottom: 22px;}
+    .index_class_speech_teacher ul li h3 {line-height: 26px; margin: 3px 0;}
     .index_class_speech_teacher {margin-top: 55px;}
-    .index_price_box {font-size: 14px;}
-    h2.knowledge_title,.rule_detail_box h2 {font-size: 25px;}
-    ul.rule_detail_btn li a {font-size: 15px;}
-    .rule_detail_box p {font-size: 15px; line-height: 29px;}
-    .banner_box {padding: 100px 18px 0 18px;}
-    .banner_content h2 {font-size: 44px; margin: 0 8px 0 0;}
+    h2.knowledge_title,.rule_detail_box h2 {font-size: 24px;}
+    .banner_box {padding: 100px 16px 0 16px;}
+    .banner_content h2 {font-size: 50px; margin: 0 8px 0 0;}
     .banner_content_text {margin-top: 10px;}
-    .banner_content_text h3 {font-size: 16px;}
     .onlineClass_video {height: 100%; width: 100%;}
     .speech_form {margin-top: 24px;}
+    .question_title,.question_info {padding: 10px 16px 20px 16px;}
     .question_title {height: auto;}
-    .question_title {padding: 10px 16px;}
-    .question_info {padding: 10px 16px 20px 16px;}
-    .question_title h1 {font-size: 17px; font-weight: 500; line-height: 27px; margin-left: 0;}
-    .question_info p {font-size: 15px; line-height: 29px; margin: 0; width: 100%;}
-    .form_radio_text {margin-top: 15px;}
-    .form_text p,.form_radio_text {font-size: 15px;}
-    .form_text input[type="text"],.form_text input[type="tel"],.form_text input[type="email"],.form_text textarea {margin-top: 15px;}
+    .question_title h1 {font-weight: 500; line-height: 24px; margin-left: 0;}
+    .question_info p {margin: 0; width: 100%;}
+    .form_radio_text {margin-top: 14px;}
+    .form_text input[type="text"],.form_text input[type="tel"],.form_text input[type="email"],.form_text textarea {margin-top: 14px;}
     .footer_box {margin-top: 55px; padding: 30px 0;}
     .footer_content {padding: 0 20px;}
     .footer_content img.Footer_logo {display: block; float: none; margin: 0 auto; max-width: 210px;}
-    .footer_menu {float: none; margin-top: 20px;}
+    .footer_menu {float: none; margin-top: 20px; width: auto;}
     .footer_menu_list li {line-height: 28px; margin-right: 0; width: 30%;}
-    .footer_menu_list li a {font-size: 14px;}
     ul.footer_contact {margin-top: 12px;}
-    ul.footer_contact li {font-size: 14px; line-height: 26px;}
     ul.social_icon {
         margin: 12px auto 0 auto; 
         position: static; 
@@ -635,6 +674,33 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     }
     ul.social_icon li img {max-width: 30px;}
     .footer_copyright {margin: 0;}
+    .question_title h1 {padding-left: 44px;}
+    .question_title h1:before {
+        font-size: 18px;
+        height: 32px;
+        line-height: 30px;
+        margin-top: 0px;
+        width: 32px;
+    }
+    .form_text {padding: 14px 0 22px 0;}
+    .form_text:last-child {padding: 14px 0 0 0;}
+    .form_text label.form_text_title,.form_text p {padding: 0; width: 32%;}
+    .form_radio_box {width: 68%;}
+    .form_text p.padding0 {line-height: 24px;}
+    .form_text label.mobile_form_textarea {float: none; width: 100%;}
+    a.speech_btn {height: 42px; line-height: 40px; margin-top: 30px;}
+}
+@media screen and (min-width:767px) and (max-width:1366px){
+    .banner_content h2 {font-size: 86px; margin: 0 10px 0 -4px;}
+    .banner_content_text h3 {font-size: 20px;}
+    .form_text label.form_text_title,.form_text p {padding: 0; width: 15%;}
+    .form_radio_box {margin-top: 8px; width: 85%;}
+    .form_text p.padding0,.form_radio_box {width: 100%;}
+}
+@media screen and (max-width:767px){
+    label.mt8 {margin-top: 8px;}
+    .form_radio_box {margin-top: 8px;}
+    .form_text p.padding0,.form_radio_box {width: 100%;}
 }
 @media screen and (max-width:330px){
     .house_platform_intro h2,.index_class_speech_teacher h2 {font-size: 20px; line-height: 26px;}

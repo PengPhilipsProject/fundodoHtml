@@ -226,7 +226,7 @@ ul.online_class li .news_photo {margin-bottom: 14px;}
 .onlineClass_video {height: 644px; width: 100%;}
 
 /* --News--------------------------------- */
-h2.knowledge_title {font-size: 28px; letter-spacing:1px; padding: 32px 0 2px 0;}
+h2.knowledge_title {font-size: 30px; font-weight: 600; letter-spacing:1px; padding: 32px 0 2px 0;}
 ul.news_box,.news_detail_box {padding-top: 32px;}
 ul.news_box li {float: left; margin: 0 36px 56px 0; width: 376px;}
 ul.news_box li:nth-child(3n+3) {margin-right: 0;}
@@ -254,7 +254,7 @@ ul.news_box li span.news_photo_no {
 ul.news_box li span.news_date,
 .index_class_speech_teacher ul li span.index_class_date {color: #aaa; font-family: Arial, Helvetica,sans-serif; font-size: 16px;}
 ul.news_box li h3 {font-size: 16px; font-weight: 400; line-height: 28px; margin-top: 8px; text-align: justify;}
-.news_detail_box h2 {font-size: 36px; font-weight: 600; padding-bottom: 34px;}
+.news_detail_box h2 {font-size: 34px; font-weight: 600; padding-bottom: 34px;}
 .news_detail_box img {box-shadow: 0 20px 90px rgba(0,0,0,.15); width: 100%;}
 .news_author {padding-top: 28px;}
 .news_author p {font-size: 15px; font-weight: 400; line-height: 27px;}
@@ -351,8 +351,8 @@ ul.rule_detail_btn li a {color: #9f9f9f; font-size: 15px; text-decoration: none;
 ul.rule_detail_btn li:last-child {margin-right: 0;}
 ul.rule_detail_btn li.selected {background: #fe5c49; border: none; color: #fff;}
 ul.rule_detail_btn li.selected a {color: #fff;}
-.user_rule {border-bottom: 2px solid #e3e3e3; padding-bottom: 26px;}
-.rule_detail_box h2 {font-size: 28px; font-weight: 500; margin: 26px 0 22px 0;}
+.user_rule {border-bottom: 1px solid #e3e3e3; padding-bottom: 26px;}
+.rule_detail_box h2 {font-size: 30px; font-weight: 600; margin: 26px 0 22px 0;}
 .rule_detail_box h2 span.rule_point {color: #fe5c49;}
 .rule_detail_no {margin-top: 22px;}
 .rule_detail_box p {font-size: 16px; line-height: 30px; text-align: justify;}
@@ -647,7 +647,13 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     ul.news_box li:last-child {margin-bottom: 0;}
     ul.news_box,.news_detail_box {padding-top: 24px;}
     ul.news_box li h3 {line-height: 26px;}
-    .news_detail_box h2 {font-size: 26px; font-weight: 500; line-height: 34px; padding-bottom: 22px;}
+    .news_detail_box h2 {
+        font-size: 28px; 
+        font-weight: 600; 
+        line-height: 38px; 
+        padding-bottom: 22px; 
+        text-align: justify;
+    }
     .news_author {padding-top: 24px;}
     .news_author p.news_page_date {padding-bottom: 24px;}
     .news_article_text {padding-bottom: 40px;}

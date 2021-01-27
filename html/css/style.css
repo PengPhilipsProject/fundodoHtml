@@ -633,7 +633,7 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     .bread_crumb {line-height: 24px;}
     .container {padding: 30px 18px 0 18px;}
     .house_platform_intro h2,.index_class_speech_teacher h2 {font-size: 24px; padding-bottom: 24px;}
-    .house_platform_intro p {line-height: 24px;}
+    .house_platform_intro p {line-height: 30px;}
     a.house_platform_intro_btn {margin: 24px auto 0 auto;}
     .index_class_speech_teacher ul {margin: 0 auto;}
     .index_class_speech_teacher ul li {margin: 0 0 40px 0; width: 100%;}
@@ -648,15 +648,15 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     ul.news_box,.news_detail_box {padding-top: 24px;}
     ul.news_box li h3 {line-height: 26px;}
     .news_detail_box h2 {
-        font-size: 28px; 
+        font-size: 26px; 
         font-weight: 600; 
-        line-height: 38px; 
+        line-height: 36px; 
         padding-bottom: 22px; 
         text-align: justify;
     }
     .news_author {padding-top: 24px;}
     .news_author p.news_page_date {padding-bottom: 24px;}
-    .news_article_text {padding-bottom: 40px;}
+    .news_article_text {font-size: 14px; line-height: 26px; padding-bottom: 40px;}
     .news_article_text h3 {font-size: 24px; line-height: 34px;}
     .news_article_text p {padding-bottom: 22px;}
     .index_class_speech_teacher ul li h3 {line-height: 26px; margin: 3px 0; text-align: justify;}
@@ -693,7 +693,7 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
         font-size: 18px;
         height: 32px;
         line-height: 30px;
-        margin-top: -1px;
+        margin-top: -2px;
         width: 32px;
     }
     .form_text {padding: 14px 0 22px 0;}
@@ -703,6 +703,7 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     .form_text p.padding0 {font-size: 16px; line-height: 26px;}
     .form_text label.mobile_form_textarea {float: none; width: 100%;}
     a.speech_btn {height: 42px; line-height: 40px; margin-top: 30px;}
+    input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label {font-size: 16px; line-height: 26px;}
 }
 @media screen and (min-width:767px) and (max-width:1366px){
     .banner_content h2 {font-size: 86px; margin: 0 10px 0 -4px;}

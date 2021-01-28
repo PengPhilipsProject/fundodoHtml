@@ -704,6 +704,7 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
     .form_text p.padding0 {font-size: 16px; line-height: 26px;}
     .form_text label.mobile_form_textarea {float: none; width: 100%;}
     a.speech_btn {height: 42px; line-height: 40px; margin-top: 30px;}
+    ul.rule_list_text {margin-left: 0;}
     input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label {font-size: 16px; line-height: 26px;}
     input[type="radio"]:checked + label:before,
     input[type="radio"]:not(:checked) + label:before {top: 4px;}

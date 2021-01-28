@@ -62,7 +62,7 @@ $(function(){
 		$rule_detail_btn.removeClass("selected");
 		$(this).addClass("selected");
 		$("html,body").stop().animate({
-			scrollTop: $("#" + $rule_detail_btn_place).offset().top - 100
+			scrollTop: $("#" + $rule_detail_btn_place).offset().top - 96
 		},800);
 		return false;
 	});

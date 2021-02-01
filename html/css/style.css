@@ -693,7 +693,7 @@ a.house_platform_intro_btn:hover,a.speech_btn:hover {animation: button_pulse 100
         font-size: 18px; 
         font-weight: 500; 
         line-height: 26px; 
-        margin: 3px 0 0 0; 
+        margin: 4px 0 0 0; 
         text-align: justify;
     }
     .index_class_speech_teacher {margin-top: 54px;}

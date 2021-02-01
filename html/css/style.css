@@ -140,7 +140,7 @@ span.banner_text_padding {padding-left: 16px;}
 
 /* --About--------------------------------- */
 .about_text {padding-top: 15px;}
-.about_text_detail {padding-top: 18px;}
+.about_text_detail {padding-top: 16px;}
 .about_text_detail p {font-size: 16px; line-height: 32px; text-align: justify;}
 .about_text_detail ol {padding-left: 20px;}
 .about_text_detail ol li {line-height: 32px;}
@@ -669,7 +669,6 @@ a.house_platform_intro_btn:hover,a.speech_btn:hover {animation: button_pulse 100
     .index_class_speech_teacher ul li img {height: auto; width: 100%;}
     .index_class_speech_teacher p {padding-top: 4px;}
     .about_text {padding-top: 0;}
-    .about_text_detail {padding-top: 16px;}
     ul.news_box li {float: none; margin: 0 0 40px 0; width: 100%;}
     ul.news_box li img {max-width: 100%; width: 100%;}
     ul.news_box li .news_photo {margin-bottom: 10px; width: 100%;}

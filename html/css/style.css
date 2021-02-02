@@ -766,7 +766,7 @@ a.house_platform_intro_btn:hover,a.speech_btn:hover {animation: button_pulse 100
     .form_text p.padding0,.form_radio_box {width: 100%;}
 }
 @media screen and (max-width:767px){
-    .banner_box {padding: 100px 16px 0 16px;}
+    .banner_box {padding: 96px 16px 0 16px;}
     label.mt8 {margin-top: 8px;}
     .form_radio_box {margin-top: 8px;}
     .form_text p.padding0,.form_radio_box {width: 100%;}

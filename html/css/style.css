@@ -140,17 +140,18 @@ span.banner_text_padding {padding-left: 16px;}
 
 /* --About--------------------------------- */
 .about_text {padding-top: 15px;}
+.about_text h2.about_text_title {color: #fe5c49; font-size: 30px; font-weight: 400; letter-spacing: 1px; padding: 32px 0 2px 0;}
 .about_text_detail {padding-top: 16px;}
 .about_text_detail p {font-size: 16px; line-height: 32px; text-align: justify;}
 .about_text_detail ol {padding-left: 20px;}
 .about_text_detail ol li {line-height: 32px;}
-span.about_text_point {color: #fe5c49;}
+.about_text_detail span.about_text_point {color: #fe5c49;}
 
 /* --Speech--------------------------------- */
 .speech_form {margin-top: 40px; width: 100%;}
-.form_text {border-top: 1px solid #e3e3e3; padding: 30px 0; width: 100%;}
-.form_text:first-child {border-top: none; padding: 0 0 30px 0;}
-.form_text:last-child {padding: 30px 0 0 0;}
+.form_text {padding-top: 34px; width: 100%;}
+.form_text:first-child {border-top: none; padding-top: 0;}
+label.form_text_title,.form_text p {font-weight: 600;}
 .form_text label.form_text_title,.form_text p {
     float: left; 
     font-size:16px; 
@@ -229,6 +230,7 @@ a.speech_btn {
 .member_box .speech_form,.speech_form .form_text:first-child {margin-top: 0;}
 .member_box a.speech_btn {margin-top: 32px;}
 .form_text p.padding0 {margin-top: -2px; padding: 0;}
+.point_calculate {margin-top: 55px;}
 
 /* --Online Class--------------------------------- */
 ul.online_class li {margin: 0 34px 44px 0;}
@@ -580,8 +582,7 @@ a.house_platform_intro_btn:hover,a.speech_btn:hover {animation: button_pulse 100
     ul.register_member_btn li {width: 100%;}
     ul.register_member_btn li > a.agree_btn {margin: 0 auto 20px auto;}
     ul.register_member_btn li > a.disagree_btn {margin: 0 auto;}
-    ul.register_member_btn li > a.agree_btn, ul.register_member_btn li > a.disagree_btn,
-    a.login_btn {height: 42px; line-height: 40px;}
+    ul.register_member_btn li > a.agree_btn, ul.register_member_btn li > a.disagree_btn,a.login_btn {height: 42px; line-height: 40px;}
     .register_member_text {height: 250px;}
     .mobile_header {
         background-color: rgb(255,255,255);
@@ -703,7 +704,7 @@ a.house_platform_intro_btn:hover,a.speech_btn:hover {animation: button_pulse 100
         text-align: justify;
     }
     .index_class_speech_teacher {margin-top: 54px;}
-    h2.knowledge_title {font-size: 24px;}
+    .about_text h2.about_text_title,h2.knowledge_title {font-size: 24px;}
     .rule_detail_box h2 {font-size: 26px;}
     .banner_content h2 {font-size: 50px; margin: 0 8px 0 0;}
     .banner_content_text {margin-top: 10px;}
@@ -740,7 +741,7 @@ a.house_platform_intro_btn:hover,a.speech_btn:hover {animation: button_pulse 100
         margin-top: -3px;
         width: 32px;
     }
-    .form_text {padding: 14px 0 22px 0;}
+    .form_text {padding: 14px 0;}
     .form_text:last-child {padding: 14px 0 0 0;}
     .form_text label.form_text_title,.form_text p {padding: 0; text-align: justify; width: 32%;}
     .form_radio_box {width: 68%;}

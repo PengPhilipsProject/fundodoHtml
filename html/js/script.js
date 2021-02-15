@@ -4,6 +4,21 @@ $(function(){
 	const $mobile_header_nav = $(".mobile_header_nav");
 	const $rule_detail_btn = $(".rule_detail_btn").find("li");
 
+	//Loading
+	$(".loading_mask").show();
+	$(".wrapper").css("opacity","0");
+	$(window).on("load",function(){
+		setTimeout(stop_load,700);
+		setTimeout(content_box,700);
+	});
+	function stop_load(){
+		$(".loading_mask > p").fadeOut(700);
+		$(".loading_mask").delay(500).fadeOut(1400);
+	}
+	function content_box(){
+		$(".wrapper").css("opacity","1");
+	}
+
 	//Mobile Menu
 	$mobile_menu.click(function(){
 		$(this).toggleClass("open");
@@ -66,4 +81,66 @@ $(function(){
 		},800);
 		return false;
 	});
+
+	//Tabs
+	$("ul.speech_tab_btn").find("li").on("click",function(){
+		let $now_speech_tab = $(this).find("a").attr("href");
+		$("ul.speech_tab_btn").find("li").removeClass("selected");
+		$(this).toggleClass("selected");
+		$(".speech_tab_content[class!='speech_tab_content_1']").hide();
+		$(this).addClass("speech_tab_current").siblings().removeClass("speech_tab_current");
+		$($now_speech_tab).fadeIn(300);
+		return false;
+	});
+
+	//Slider
+	$(".index_slider").slick({
+		slidesToShow: 1,
+		arrows: false,
+		autoplay: true,
+		dots: true,
+		fade: true,
+		infinite: true,
+		speed: 700
+	});
+	$(".owl-carousel").owlCarousel({
+		loop: true,
+		margin: 10,
+		responsiveClass: true,
+		responsive: {
+		  1000: {
+			items: 3,
+			autoplay: true,
+			autoplaySpeed: 700,
+			autoplayTimeout: 2700, 
+			loop: true,
+			margin: 20,
+			nav: false
+		  },
+		  600: {
+			items: 3,
+			autoplay: true,
+			autoplaySpeed: 700,
+			autoplayTimeout: 2700,
+			loop: true,
+			nav: false
+		  },
+		  420: {
+			items: 2,
+			autoplay: true,
+			autoplaySpeed: 700,
+			autoplayTimeout: 2700,
+			loop: true,
+			nav: false
+		  },
+		  0: {
+			items: 1,
+			autoplay: true,
+			autoplaySpeed: 700,
+			autoplayTimeout: 2700,
+			loop: true,
+			nav: false
+		  },
+		}
+	})
 });

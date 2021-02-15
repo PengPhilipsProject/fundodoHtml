@@ -3,15 +3,23 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
       <link href="css/normalize.css" rel="stylesheet" type="text/css">
       <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/slick.css" rel="stylesheet" type="text/css">
+      <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
       <title>房多多-線上課程</title>
    </head>
    <body>
+      <!-- ... Loading ... -->
+      <div class="loading_mask">
+         <p>FUNDODO</p>
+      </div>
       <div class="wrapper">
          <!-- ... Modal ... -->
          <div class="loginModal">
@@ -75,8 +83,8 @@
             </form>
             <a class="login_btn" href="#">送出</a>
          </div>
-         <div class="mask"></div>  
-
+         <div class="mask"></div> 
+ 
          <!-- ... Mobile Header ... -->
          <header class="mobile_header">
             <div class="mobile_menu">
@@ -99,10 +107,10 @@
                   <li><a href="onlineClass.html">線上課程</a></li>
                   <li><a href="news.html">最新消息</a></li>
                   <li><a href="question.html">常見問題</a></li>
-                  <li><a href="rule.html">條款小站</a></li>
-                  <li><a href="member_data.html">會員中心</a></li>				  
+                  <li><a href="analysis.html">數據分析</a></li>
+                  <li><a href="member_data.html">會員中心</a></li>
                   <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
-                  <li><a href="#">後臺管理</a></li>
+                  <li><a href="rule.html">條款小站</a></li>
                   <li><a class="member_login_btn" href="#">登入</a></li>
                   <li><a href="#">登出</a></li>
                </ul>
@@ -121,8 +129,8 @@
                      <li><a href="onlineClass.html">線上課程</a></li>
                      <li><a href="news.html">最新消息</a></li>
                      <li><a href="question.html">常見問題</a></li>
-                     <li><a href="rule.html">條款小站</a></li>
-                     <li><a href="member_data.html">會員中心</a></li>					 
+                     <li><a href="analysis.html">數據分析</a></li>
+                     <li><a href="member_data.html">會員中心</a></li>
                      <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
                      <li><a class="member_login_btn" href="#">登入</a></li>
                      <li><a href="#">登出</a></li>
@@ -236,7 +244,6 @@
                      <li><a href="question.html">常見問題</a></li>
                      <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
                      <li><a href="rule.html">條款小站</a></li>
-                     <li><a href="#">後臺管理</a></li>
                   </ul>
                   <ul class="social_icon clearfix">
                      <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>
@@ -253,10 +260,12 @@
             </div>
          </footer>
          <div class="footer_copyright">
-            <h6>Copyright © HOUSE PLATFORM CO, LTD.2020</h6>
+            <h6>Copyright © FUNDODO PLATFORM CO, LTD.2021</h6>
          </div>
       </div>
       <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/slick.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>

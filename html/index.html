@@ -3,15 +3,23 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
       <link href="css/normalize.css" rel="stylesheet" type="text/css">
       <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/slick.css" rel="stylesheet" type="text/css">
+      <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
       <title>房多多-首頁</title>
    </head>
    <body>
+      <!-- ... Loading ... -->
+      <div class="loading_mask">
+         <p>FUNDODO</p>
+      </div>
       <div class="wrapper">
          <!-- ... Modal ... -->
          <div class="loginModal">
@@ -99,10 +107,10 @@
                   <li><a href="onlineClass.html">線上課程</a></li>
                   <li><a href="news.html">最新消息</a></li>
                   <li><a href="question.html">常見問題</a></li>
-                  <li><a href="rule.html">條款小站</a></li>
+                  <li><a href="analysis.html">數據分析</a></li>
                   <li><a href="member_data.html">會員中心</a></li>
                   <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
-                  <li><a href="#">後臺管理</a></li>
+                  <li><a href="rule.html">條款小站</a></li>
                   <li><a class="member_login_btn" href="#">登入</a></li>
                   <li><a href="#">登出</a></li>
                </ul>
@@ -121,7 +129,7 @@
                      <li><a href="onlineClass.html">線上課程</a></li>
                      <li><a href="news.html">最新消息</a></li>
                      <li><a href="question.html">常見問題</a></li>
-                     <li><a href="rule.html">條款小站</a></li>
+                     <li><a href="analysis.html">數據分析</a></li>
                      <li><a href="member_data.html">會員中心</a></li>
                      <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
                      <li><a class="member_login_btn" href="#">登入</a></li>
@@ -131,83 +139,158 @@
             </div>
          </header>
 
-         <!-- ... Banner -->
-         <section class="index_banner_box">
-            <img src="images/Index_banner.png" alt="首頁Banner" title="首頁Banner">
+         <!-- ... Slider -->
+         <section class="index_slider">
+            <div class="index_slider">
+               <div class="slick-slide">
+                  <img src="images/index_banner1.svg" alt="首頁banner">
+               </div>
+               <div class="slick-slide">
+                  <img src="images/index_banner2.svg" alt="首頁banner">
+               </div>
+               <div class="slick-slide">
+                  <img src="images/index_banner3.svg" alt="首頁banner">
+               </div>
+            </div>
          </section>
 
          <!-- ... Content -->
          <section class="container">
             <div class="house_platform_intro">
-                <h2>房多多-全方位買房顧問團隊</h2>
-                <p>房多多是一個站在買方的立場，全方位的買房顧問團隊，以不動產線上數位內容為載體，<br/>
-                智慧購屋平台為骨幹，房屋團購為架構，專家諮詢和團隊為後盾，打造一個整合學習、<br/>
-                房地產經營新方案，投資房地產不再是有錢人的專利，讓小資族透過學習也能享受不動產自住、<br/>
-                包租、買賣的獲利過程，實現財富自由的夢想。</p>
-                <a href="about.html" class="house_platform_intro_btn">瞭解更多</a>
-            </div>
-            <div class="index_class_speech_teacher">
-               <h2>報名講座</h2>
-               <ul class="clearfix">
+                <h2>誰適合加入我們</h2>
+                <ul class="clearfix">
                   <li>
-                     <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
-                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                     <img src="images/Index_feature1.png" alt="小資族">
+                     <h3>小資族</h3>
                   </li>
                   <li>
-                     <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
-                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                     <img src="images/Index_feature2.png" alt="上班族">
+                     <h3>上班族</h3>
                   </li>
                   <li>
-                     <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
-                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                     <img src="images/Index_feature3.png" alt="月光族">
+                     <h3>月光族</h3>
+                  </li>
+                  <li>
+                     <img src="images/Index_feature4.png" alt="投資房產族">
+                     <h3>投資房產族</h3>
+                  </li>
+                  <li>
+                     <img src="images/Index_feature5.png" alt="存款不足族">
+                     <h3>存款不足族</h3>
                   </li>
                </ul>
             </div>
             <div class="index_class_speech_teacher">
-               <h2>影音課程</h2>
-               <ul class="clearfix">
-                  <li>
-                     <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
+               <h2>影音廣告</h2>
+               <iframe class="onlineClass_video" src="https://www.youtube.com/embed/80dDQrzwa8g" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            </div>
+            <div class="index_class_speech_teacher">
+               <h2>報名講座</h2>
+               <ul class="owl-carousel owl-theme clearfix">
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁報名講座">
+                     <span class="index_class_date">2021.02.15</span>
                      <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
-                     <span class="index_price_box">預購價:<span class="index_price">1000</span>元起</span>
                   </li>
-                  <li>
-                     <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁報名講座">
+                     <span class="index_class_date">2020.12.02</span>
                      <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
-                     <span class="index_price_box">預購價:<span class="index_price">1000</span>元起</span>
                   </li>
-                  <li>
-                     <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁報名講座">
+                     <span class="index_class_date">2020.11.02</span>
                      <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
-                     <span class="index_price_box">預購價:<span class="index_price">1000</span>元起</span>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁報名講座">
+                     <span class="index_class_date">2020.09.15</span>
+                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁報名講座">
+                     <span class="index_class_date">2020.05.15</span>
+                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁報名講座">
+                     <span class="index_class_date">2020.03.13</span>
+                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁報名講座">
+                     <span class="index_class_date">2020.02.10</span>
+                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
                   </li>
                </ul>
             </div>
             <div class="index_class_speech_teacher">
                <h2>達人介紹</h2>
-               <ul class="clearfix">
-                  <li>
+               <ul class="owl-carousel owl-theme clearfix">
+                  <li class="item">
                      <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
-                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                     <h3>達人1</h3>
                      <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
                   </li>
-                  <li>
+                  <li class="item">
                      <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
-                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                     <h3>達人2</h3>
                      <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
                   </li>
-                  <li>
+                  <li class="item">
                      <img src="images/Index_class.png" alt="首頁課程">
-                     <span class="index_class_date">2020.12.15</span>
-                     <h3>網路行銷全方位的入門的上集課程入門的上集課程</h3>
+                     <h3>達人3</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人4</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人5</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人6</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人7</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人8</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人9</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人10</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人11</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人12</h3>
+                     <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
+                  </li>
+                  <li class="item">
+                     <img src="images/Index_class.png" alt="首頁課程">
+                     <h3>達人13</h3>
                      <p>致力推廣設計教育，教學超過5000名學生開開設全台網頁設計與介面設計最多人參與的課程，獲得好評價不斷，多間大專院校與實體補教5年教學經驗，線上教學5年經驗</p>
                   </li>
                </ul>
@@ -228,7 +311,6 @@
                      <li><a href="question.html">常見問題</a></li>
                      <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
                      <li><a href="rule.html">條款小站</a></li>
-                     <li><a href="#">後臺管理</a></li>
                   </ul>
                   <ul class="social_icon clearfix">
                      <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>
@@ -245,10 +327,12 @@
             </div>
          </footer>
          <div class="footer_copyright">
-            <h6>Copyright © HOUSE PLATFORM CO, LTD.2020</h6>
+            <h6>Copyright © FUNDODO PLATFORM CO, LTD.2021</h6>
          </div>
       </div>
       <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/slick.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>

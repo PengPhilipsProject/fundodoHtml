@@ -3,15 +3,23 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
       <link href="css/normalize.css" rel="stylesheet" type="text/css">
       <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/slick.css" rel="stylesheet" type="text/css">
+      <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
       <title>房多多-條款小站</title>
    </head>
    <body>
+      <!-- ... Loading ... -->
+      <div class="loading_mask">
+         <p>FUNDODO</p>
+      </div>
       <div class="wrapper">
          <!-- ... Modal ... -->
          <div class="loginModal">
@@ -99,10 +107,10 @@
                   <li><a href="onlineClass.html">線上課程</a></li>
                   <li><a href="news.html">最新消息</a></li>
                   <li><a href="question.html">常見問題</a></li>
-                  <li><a href="rule.html">條款小站</a></li>
-                  <li><a href="member_data.html">會員中心</a></li>				  
+                  <li><a href="analysis.html">數據分析</a></li>
+                  <li><a href="member_data.html">會員中心</a></li>
                   <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
-                  <li><a href="#">後臺管理</a></li>
+                  <li><a href="rule.html">條款小站</a></li>
                   <li><a class="member_login_btn" href="#">登入</a></li>
                   <li><a href="#">登出</a></li>
                </ul>
@@ -121,8 +129,8 @@
                      <li><a href="onlineClass.html">線上課程</a></li>
                      <li><a href="news.html">最新消息</a></li>
                      <li><a href="question.html">常見問題</a></li>
-                     <li><a href="rule.html">條款小站</a></li>
-                     <li><a href="member_data.html">會員中心</a></li>					 
+                     <li><a href="analysis.html">數據分析</a></li>
+                     <li><a href="member_data.html">會員中心</a></li>
                      <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
                      <li><a class="member_login_btn" href="#">登入</a></li>
                      <li><a href="#">登出</a></li>
@@ -150,7 +158,6 @@
                <ul class="rule_detail_btn clearfix">
                   <li class="selected"><a href="#user_rule" data-target="user_rule">使用者條款</a></li>
                   <li><a href="#privacy_rule" data-target="privacy_rule">隱私權政策</a></li>
-                  <!--<li><a href="#member_rule" data-target="member_rule">會員方案</a></li>-->
                </ul>
                <div class="user_rule" id="user_rule">
                   <h2><span class="rule_point">使用者</span>條款</h2>
@@ -241,7 +248,7 @@
                </div>
             </div>
             <div class="rule_detail_box">
-               <div class="privacy_rule" id="privacy_rule">
+               <div class="user_rule bottom_line_hide" id="privacy_rule">
                   <h2><span class="rule_point">隱私權</span>政策</h2>
                   <p>本網站非常重視本網站每位使用者的隱私權並且給予最高限度保障，為了讓每位使用者清楚地了解到本網站對於所蒐集到的個人資料及使用的情形，請使用者詳讀以下本網站所聲明之隱私權政策。</p>
                   <p>本網站謹遵循「個人資料保護法」之規範，合理蒐集使用者之資訊並利用，以保障使用者個人資料之安全。</p>
@@ -280,46 +287,6 @@
                   </div>
                </div>
             </div>
-            <!--<div class="rule_detail_box">
-               <div class="member_rule" id="member_rule">
-                  <h2><span class="rule_point">會員</span>方案</h2>
-                  <p>本網站非常重視本網站每位使用者的隱私權並且給予最高限度保障，為了讓每位使用者清楚地了解到本網站對於所蒐集到的個人資料及使用的情形，請使用者詳讀以下本網站所聲明之隱私權政策。</p>
-                  <p>本網站謹遵循「個人資料保護法」之規範，合理蒐集使用者之資訊並利用，以保障使用者個人資料之安全。</p>
-                  <p>依「個人資料保護法」第8條之規定，本網站將告知使用者以下事項：</p>
-                  <div class="rule_detail_no">
-                     <p>1.本隱私權政策適用對象範圍包括因使用本網站、接受本網站所提供的服務、申請加入本網站會員，而提供本網站個人資料者。</p>
-                     <p>2.本網頁係好市多多有限公司所有。</p>
-                     <p>3.本網站所蒐集之資料係依好市多多有限公司與提供使用者之契約目的，履行對於使用者之契約義務並進行客戶管理及服務。本網站藉由使用者加入會員或進行交易之過程蒐集資料。</p>
-                     <p>4.本網站所蒐集的個人資料內容包括：使用者之姓名、性別、生日、地址、電話、電子郵件、信用卡或金融機構帳戶資訊。</p>
-                     <p>5.本網站蒐集個人資料所使用的期間為使用者加入後，至其要求停止接受本網站服務為止。</p>
-                     <p>6.本網站所蒐集到之個人資料可能使用於全球各地區。</p>
-                     <p>7.本網站所蒐集到之個人資料將使用於履行契約時所必要提供之對象及方式。例如客戶於本網站刷卡消費後，將提供消費記錄予金融機構進行扣款；客戶確定參與課程後，將提供可辨識個人之資訊予授課者或其團隊。</p>
-                     <p>8.依「個人資料保護法」第3條之規定，本網站所蒐集個人資料之當事人得請求本網站提供其：</p>
-                     <ul class="rule_list_text">
-                        <li>a.查詢或請求閱覽。</li>
-                        <li>b.請求製給複製本。</li>
-                        <li>c.請求補充或更正。</li>
-                        <li>d.請求停止蒐集、處理或利用。</li>
-                        <li>e.請求刪除。</li> 
-                     </ul>
-                  </div>
-                  <div class="rule_detail_no">
-                     <p>(一) 個人資料之保護：</p>
-                     <p>1.本網站會採取預防措施保護使用者的個人資料，避免遭盜用、濫用或任何未經許可之變更、揭露、存取刪除。</p>
-                  </div>
-                  <div class="rule_detail_no">
-                     <p>(二) 第三人揭露：</p>
-                     <p>除有下列情形，本網站不會提供使用者之個人資料予其他人或法人：</p>
-                     <p>1.徵得使用者之事先同意。</p>
-                     <p>2.基於契約約定之使用目的。</p>
-                     <p>3.基於法令規定。</p>
-                  </div>
-                  <div class="rule_detail_no">
-                     <p>(三) 隱私權政策之變更：</p>
-                     <p>1.本網站的隱私權政策可能因為提供服務變更、法令變更或其他可能產生本網站資訊蒐集影響之情形，修改本隱私權政策。本隱私權政策變更時，會同時於本網站公布，以供使用者隨時閱覽。</p>
-                  </div>
-               </div>
-            </div>-->
          </section>
 
          <!-- ... Footer ... -->
@@ -336,7 +303,6 @@
                      <li><a href="question.html">常見問題</a></li>
                      <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
                      <li><a href="rule.html">條款小站</a></li>
-                     <li><a href="#">後臺管理</a></li>
                   </ul>
                   <ul class="social_icon clearfix">
                      <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>
@@ -353,10 +319,12 @@
             </div>
          </footer>
          <div class="footer_copyright">
-            <h6>Copyright © HOUSE PLATFORM CO, LTD.2020</h6>
+            <h6>Copyright © FUNDODO PLATFORM CO, LTD.2021</h6>
          </div>
       </div>
       <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/slick.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>

@@ -3,15 +3,23 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
       <link href="css/normalize.css" rel="stylesheet" type="text/css">
       <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/slick.css" rel="stylesheet" type="text/css">
+      <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
       <title>房多多-關於房多多</title>
    </head>
    <body>
+      <!-- ... Loading ... -->
+      <div class="loading_mask">
+         <p>FUNDODO</p>
+      </div>
       <div class="wrapper">
          <!-- ... Modal ... -->
          <div class="loginModal">
@@ -99,10 +107,10 @@
                   <li><a href="onlineClass.html">線上課程</a></li>
                   <li><a href="news.html">最新消息</a></li>
                   <li><a href="question.html">常見問題</a></li>
-                  <li><a href="rule.html">條款小站</a></li>
+                  <li><a href="analysis.html">數據分析</a></li>
                   <li><a href="member_data.html">會員中心</a></li>
                   <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
-                  <li><a href="#">後臺管理</a></li>
+                  <li><a href="rule.html">條款小站</a></li>
                   <li><a class="member_login_btn" href="#">登入</a></li>
                   <li><a href="#">登出</a></li>
                </ul>
@@ -121,7 +129,7 @@
                      <li><a href="onlineClass.html">線上課程</a></li>
                      <li><a href="news.html">最新消息</a></li>
                      <li><a href="question.html">常見問題</a></li>
-                     <li><a href="rule.html">條款小站</a></li>
+                     <li><a href="analysis.html">數據分析</a></li>
                      <li><a href="member_data.html">會員中心</a></li>
                      <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
                      <li><a class="member_login_btn" href="#">登入</a></li>
@@ -147,14 +155,30 @@
                <a href="index.html"><i class="fa fa-1g fa-home"></i>首頁</a><i class="fa fa-angle-right"></i>關於房多多
             </div>
             <div class="about_text">
-               <h2 class="about_text_title">使命與願景</h2>
+               <h2 class="knowledge_title">關於房多多不動產智慧平台</h2>
                <div class="about_text_detail">
                   <p>房多多是一個站在買方的立場，全方位的買房顧問團隊，以<span class="about_text_point">不動產線上數位內容為載體，智慧購屋平台為骨幹，房屋團購為架構，專家諮詢和團隊為後盾</span>，打造一個整合學習、房地產經營新方案，投資房地產不再是有錢人的專利，讓小資族透過學習也能享受不動產自住、包租、買賣的獲利過程，實現財富自由的夢想。</p>
                   <p><span class="about_text_point">讓人們便捷獲取房地產知識</span>，用科技讓複雜房地產更簡單。並以創新精神，專業的團隊，提供一條龍房地產服務，成為新房地產科技第一品牌。</p>
                </div>
             </div>
             <div class="about_text">
-               <h2 class="about_text_title">理念</h2>
+               <h2 class="knowledge_title">使命</h2>
+               <div class="about_text_detail">
+                  <ol>
+                     <li>讓人們便捷獲取房地產知識，用科技讓複雜的房地產更簡單。</li>
+                  </ol>
+               </div>
+            </div>
+            <div class="about_text">
+               <h2 class="knowledge_title">願景</h2>
+               <div class="about_text_detail">
+                  <ol>
+                     <li>以創新精神，專業的團隊，提供一條龍房地產服務，成為新房地產科技第一品牌。</li>
+                  </ol>
+               </div>
+            </div>
+            <div class="about_text">
+               <h2 class="knowledge_title">理念</h2>
                <div class="about_text_detail">
                   <ol>
                      <li>強調前瞻性與團隊精神的工作隊伍。</li>
@@ -164,7 +188,7 @@
                </div>
             </div>
             <div class="about_text">
-               <h2 class="about_text_title">價值觀</h2>
+               <h2 class="knowledge_title">價值觀</h2>
                <div class="about_text_detail">
                   <ol>
                      <li>精益求精</li>
@@ -176,7 +200,7 @@
                </div>
             </div>
             <div class="about_text">
-               <h2 class="about_text_title">核心價值</h2>
+               <h2 class="knowledge_title">核心價值</h2>
                <div class="about_text_detail">
                   <ol>
                      <li>團隊精神：以團結一心的態度，實現房多多與您共同的目標</li>
@@ -202,7 +226,6 @@
                      <li><a href="question.html">常見問題</a></li>
                      <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
                      <li><a href="rule.html">條款小站</a></li>
-                     <li><a href="#">後臺管理</a></li>
                   </ul>
                   <ul class="social_icon clearfix">
                      <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>
@@ -219,10 +242,12 @@
             </div>
          </footer>
          <div class="footer_copyright">
-            <h6>Copyright © HOUSE PLATFORM CO, LTD.2020</h6>
+            <h6>Copyright © FUNDODO PLATFORM CO, LTD.2021</h6>
          </div>
       </div>
       <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/slick.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>

@@ -35,8 +35,8 @@ h4.rule_detail_title,ul.footer_contact,ul.footer_contact li a,ul.footer_menu_lis
 .news_author p,.news_article_text p,.question_info p,.rule_detail_box p,.about_text_detail p,.about_text_detail ol li,
 .house_platform_intro h3,ul.rule_list_text li {color: #4D4D4D;}
 ::placeholder,::-ms-input-placeholder {color: #4D4D4D;}
-.wrapper {position: relative;}
 .clearfix:after {clear: both; content: ""; display: block;}
+#wrapper {position: relative;}
 
 /* --Header--------------------------------- */
 .desktop_header_box {
@@ -86,10 +86,10 @@ nav.desktop_header_nav li a.login_btn {
 .index_class_speech_teacher ul li {float: left; margin-right: 21px; outline: none; max-width: 386px;}
 .index_class_speech_teacher ul li:last-child {margin-right: 0;}
 .index_class_speech_teacher ul li img {margin-bottom: 10px;}
-.index_class_speech_teacher ul li h3 {font-size: 20px; font-weight: 500; line-height: 30px; margin: 8px 0;}
+.index_class_speech_teacher ul li h3 {font-size: 18px; font-weight: 500; line-height: 30px; margin: 8px 0 2px 0;}
 .index_class_speech_teacher p {font-size: 16px; line-height: 28px; text-align: justify;}
 .index_class_speech_teacher .onlineClass_video {margin-top: 40px;}
-span.index_price {color: #ff5c49; font-size: 30px; font-weight: 400; letter-spacing: 0;}
+span.index_class_date {font-size: 14px;}
 
 /* --Banner & Bread_Crumb--------------------------------- */
 .banner_box {color: #fe5c49; padding: 110px 0 44px 0; width: 100%;}
@@ -364,12 +364,12 @@ ul.rule_detail_btn li.selected {background: #fe5c49; border: none; color: #fff;}
 ul.rule_detail_btn li.selected a {color: #fff;}
 .user_rule {border-bottom: 1px solid #e3e3e3; padding-bottom: 26px;}
 .user_rule.bottom_line_hide {border-bottom: none; padding-bottom: 0;}
-.rule_detail_box h2 {font-size: 30px; font-weight: 600; margin: 26px 0 22px 0;}
+.rule_detail_box h2 {font-size: 30px; font-weight: 600; margin: 26px 0 18px 0;}
 .rule_detail_box h2 span.rule_point {color: #fe5c49;}
 .rule_detail_no {margin-top: 22px;}
 .rule_detail_box p {font-size: 16px; line-height: 30px; text-align: justify;}
 ul.rule_list_text li {line-height: 30px; text-align: justify;}
-h4.rule_detail_title {color: #fe5c49; font-size: 18px; font-weight: 500; padding-bottom: 14px;}
+h4.rule_detail_title {font-size: 18px; font-weight: 500; padding-bottom: 14px;}
 
 /* --Footer--------------------------------- */
 .footer_box {
@@ -466,7 +466,7 @@ img.modal_close_icon:hover {opacity: .7;}
     border: none;
     margin-top: 26px;
     outline: none; 
-    padding: 14px; 
+    padding: 12px 14px; 
     position: relative;
     width: 100%;
 }
@@ -518,28 +518,27 @@ ul.login_modal_link li a {font-weight: 400; text-decoration: none;}
 a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
 
 /* --Loading--------------------------------- */
-.loading_mask {
+#loading_mask {
     background: #fff; 
-    display: none; 
+    display: none;
     height: 100%; 
     overflow: hidden;
     position: fixed;
     width: 100%; 
     z-index: 10000;
 }
-.loading_mask p {
+#loading_mask p {
     animation: text_slide_down .5s ease-in-out 0s forwards; 
     bottom: 0;
-    color: #ff5c49; 
+    color: #ff5c49;
     font-size: 28px; 
     font-weight: 600;
     left: 0;
-    line-height: 100vh;
-    margin: 0;
+    margin-top: -16px;
     position: absolute;
     right: 0; 
     text-align: center;
-    top: 0;
+    top: 50%;
 }
 
 /* --Animation--------------------------------- */
@@ -600,8 +599,8 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,input::-moz-placeholder,textarea::-moz-placeholder,
     input:-ms-input-placeholder,textarea:-ms-input-placeholder,.footer_menu_list li a {font-size: 14px;}
     .news_author p,.news_article_text p,.index_class_speech_teacher p,.about_text_detail p,ul.rule_detail_btn li a,ul.rule_list_text li,.rule_detail_box p,.question_info p,.about_text_detail ol li,
-    .form_text label,.form_text p.padding0,.form_radio_text,ul.footer_contact li {font-size: 14px; line-height: 26px;}
-    nav.mobile_header_nav li a,a.login_btn,.banner_content_text h3,.question_title h1,.house_platform_intro p,ul.news_box li h3,.index_class_speech_teacher ul li h3,a.speech_btn {font-size: 16px;}
+    .form_text label,.form_text p.padding0,.form_radio_text,ul.footer_contact li {font-size: 14px; line-height: 24px;}
+    nav.mobile_header_nav li a,a.login_btn,.banner_content_text h3,.question_title h1,.house_platform_intro p,ul.news_box li h3,a.speech_btn {font-size: 16px;}
     .form_text input[type="text"],.form_text input[type="tel"],.form_text input[type="email"],.form_text textarea {float: none; max-width: none;}
     ul.register_member_btn {margin: 20px auto 0 auto;}
     ul.register_member_btn li {width: 100%;}
@@ -696,7 +695,6 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     .index_class_speech_teacher ul li {margin: 0 0 40px 0; width: 100%;}
     .index_class_speech_teacher ul li:last-child {margin: 0;}
     .index_class_speech_teacher ul li img {height: auto; width: 100%;}
-    .index_class_speech_teacher p {padding-top: 4px;}
     .about_text {padding-top: 0;}
     ul.news_box li {float: none; margin: 0 0 40px 0; width: 100%;}
     ul.news_box li img {max-width: 100%; width: 100%;}
@@ -720,8 +718,7 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     .news_article_text p {padding-bottom: 20px; text-align: justify;}
     .news_detail_box img {box-shadow: none;}
     .index_class_speech_teacher {margin-top: 54px;}
-    .index_class_speech_teacher ul li h3 {
-        font-size: 18px; 
+    .index_class_speech_teacher ul li h3 { 
         font-weight: 500; 
         line-height: 26px; 
         margin: 4px 0 0 0; 
@@ -747,22 +744,22 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     .footer_menu_list li {line-height: 28px; margin-right: 0; width: 30%;}
     ul.footer_contact {margin-top: 12px;}
     ul.social_icon {
-        margin: 12px 0 0 -6px; 
+        margin-top: 12px; 
         position: static; 
         right: auto; 
         top: 0; 
         width: 118px;
     }
     ul.social_icon li {margin-right: 10px;}
-    ul.social_icon li img {max-width: 30px;}
+    ul.social_icon li img {max-width: 32px;}
     .footer_copyright {margin: 0;}
-    .question_detail_box {margin-top: 24px;}
+    .question_detail_box {margin-top: 20px;}
     .question_title h1 {padding-left: 44px;}
     .question_title h1:before {
         font-size: 18px;
         height: 32px;
         line-height: 31px;
-        margin-top: -4px;
+        margin-top: -2px;
         width: 32px;
     }
     .form_text {padding: 14px 0 22px 0;}
@@ -794,8 +791,10 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     .index_slider {margin-bottom: 54px; padding: 33px 0 0 0;}
 }
 @media screen and (max-width:1004px){
-    .house_platform_intro ul {flex-direction: column; margin: 0 auto; width: 140px;}
-    .house_platform_intro li {margin-bottom: 26px; margin-right: 0;}
+    .house_platform_intro ul {flex-direction: column; margin: 0 auto; width: 122px;}
+    .house_platform_intro li {float: left; margin-bottom: 26px; margin-right: 0;}
+    .house_platform_intro li:last-child {margin-bottom: 0;}
+    .house_platform_intro li img {max-width: 100%;}
 }
 @media screen and (max-width:767px){
     .banner_box {padding: 100px 16px 36px 16px;}

@@ -136,6 +136,7 @@ span.banner_text_padding {padding-left: 16px;}
     height: auto; 
     width: 100%;
 }
+.video_slider {margin-top: 20px;}
 
 /* --About--------------------------------- */
 .about_text_detail {padding-top: 16px;}
@@ -687,6 +688,7 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     }
     .index_banner_box {padding: 0;}
     .index_banner_box img {margin-top: 66px;}
+    .video_slider {margin-top: 0;}
     .bread_crumb {line-height: 24px;}
     .container {padding: 30px 18px 0 18px;}
     .house_platform_intro h2,.index_class_speech_teacher h2 {font-size: 24px; padding-bottom: 24px;}
@@ -729,7 +731,6 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     h2.knowledge_title {line-height: 36px; padding: 30px 0 0 0;}
     .banner_content h2 {font-size: 50px; margin: 0 8px 0 0;}
     .banner_content_text {margin-top: 10px;}
-    .onlineClass_video {height: 100%; width: 100%;}
     .speech_form {margin-top: 24px;}
     .question_title,.question_info {padding: 10px 0 0 0;}
     .question_title {height: auto;}
@@ -803,6 +804,9 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     label.mt8 {margin-top: 8px;}
     .form_radio_box {margin-top: 8px;}
     .form_text p.padding0,.form_radio_box {width: 100%;}
+}
+@media screen and (max-width:750px){
+    .onlineClass_video {height: 100%; width: 100%;}
 }
 @media screen and (max-width:604px){
     ul.rule_detail_btn li {margin-right: 10px;}

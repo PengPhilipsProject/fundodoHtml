@@ -5,18 +5,18 @@ $(function(){
 	const $rule_detail_btn = $(".rule_detail_btn").find("li");
 
 	//Loading
-	$(".loading_mask").show();
-	$(".wrapper").css("opacity","0");
+	$("#loading_mask").show();
+	$("#wrapper").css("opacity","0");
 	$(window).on("load",function(){
 		setTimeout(stop_load,700);
 		setTimeout(content_box,700);
 	});
 	function stop_load(){
-		$(".loading_mask > p").fadeOut(700);
-		$(".loading_mask").delay(500).fadeOut(1400);
+		$("#loading_mask > p").fadeOut(700);
+		$("#loading_mask").delay(500).fadeOut(1400);
 	}
 	function content_box(){
-		$(".wrapper").css("opacity","1");
+		$("#wrapper").css("opacity","1");
 	}
 
 	//Mobile Menu
@@ -94,7 +94,7 @@ $(function(){
 	});
 
 	//Slider
-	$(".index_slider").slick({
+	$(".index_slider,.video_slider").slick({
 		slidesToShow: 1,
 		arrows: false,
 		autoplay: true,

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+<title>房多多-報名成功講座</title>
+</head>
+<body>
+<!-- ... Loading ... -->
+<div id="loading_mask">
+   <p>FUNDODO</p>
+</div>
+<div id="wrapper">
+   <!-- ... Modal ... -->
+   <div class="loginModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>會員登入</h3>
+      <form action="#">
+         <input type="text" id="login_number" name="login_number" placeholder="請輸入您的帳號">
+         <input type="password" id="login_psw" name="login_psw" placeholder="請輸入您的密碼">
+      </form>
+      <a class="login_btn" href="#">會員登入</a>
+      <ul class="login_modal_link clearfix">
+         <li><a class="forget_psw" href="#">忘記密碼</a></li>
+         <li><a class="add_member" href="#">加入會員</a></li>
+      </ul>
+   </div>
+   <div class="forgetPswModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>忘記密碼</h3>
+      <form action="#">
+         <input type="text" id="forget_psw_number" name="forget_psw_number" placeholder="請輸入您的帳號">
+         <input type="email" id="forget_psw_email" name="forget_psw_email" placeholder="請輸入您的電子信箱">
+         <input type="password" id="forget_psw_psw" name="forget_psw_psw" placeholder="請輸入您的密碼">
+         <input type="password" id="forget_psw_confirm_psw" name="forget_psw_confirm_psw" placeholder="請再一次輸入您的密碼">
+      </form>
+      <a class="login_btn" href="#">重新設定密碼</a>
+   </div>
+   <div class="registerRuleModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>註冊條款</h3>
+      <div class="register_member_text">
+         <p>1.本網站謹遵循「個人資料保護法」之規範，合理蒐集使用者之資訊並利用，以保障使用者個人資料之安全。 依「個人資料保護法」第8條之規定，本網站將告知使用者以下事項： 本隱私權政策適用對象範圍包括因使用本網站、接受本網站所提供的服務、申請加入本網站會員，而提供本網站個人資料者。 本網頁係好市多多有限公司所有。 本網站所蒐集之資料係依好市多多有限公司與提供使用者之契約目的，履行對於使用者之契約義務並進行客戶管理及服務。本網站藉由使用者加入會員或進行交易之過程蒐集資料。 本網站所蒐集的個人資料內容包括：使用者之姓名、性別、生日、地址、電話、電子郵件、信用卡或金融機構帳戶資訊。 本網站蒐集個人資料所使用的期間為使用者加入後，至其要求停止接受本網站服務為止。 本網站所蒐集到之個人資料可能使用於全球各地區。 本網站所蒐集到之個人資料將使用於履行契約時所必要提供之對象及方式。例如客戶於本網站刷卡消費後，將提供消費記錄予金融機構進行扣款；客戶確定參與課程後，將提供可辨識個人之資訊予授課者或其團隊。</p>
+         <p>2.依「個人資料保護法」第3條之規定，本網站所蒐集個人資料之當事人得請求本網站提供其： 查詢或請求閱覽； 請求製給複製本； 請求補充或更正； 請求停止蒐集、處理或利用； 請求刪除。 個人資料之保護： 本網站會採取預防措施保護使用者的個人資料，避免遭盜用、濫用或任何未經許可之變更、揭露、存取刪除。 第三人揭露： 除有下列情形，本網站不會提供使用者之個人資料予其他人或法人： 一、徵得使用者之事先同意； 二、基於契約約定之使用目的； 三、基於法令規定。 隱私權政策之變更： 本網站的隱私權政策可能因為提供服務變更、法令變更或其他可能產生本網站資訊蒐集影響之情形，修改本隱私權政策。本隱私權政策變更時，會同時於本網站公布，以供使用者隨時閱覽。</p>
+      </div>
+      <ul class="register_member_btn clearfix">
+         <li><a class="agree_btn" href="#">同意</a></li>
+         <li><a class="disagree_btn" href="#">不同意</a></li>
+      </ul>
+   </div>
+   <div class="registerModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>加入會員</h3>
+      <form action="#">
+         <input type="text" id="register_name" name="register_name" placeholder="請輸入您的姓名">
+         <input type="text" id="register_number" name="register_number" placeholder="請輸入您的帳號">
+         <input type="password" id="register_password" name="register_password" placeholder="請輸入您的密碼">
+         <input type="tel" id="register_phone" name="register_phone" placeholder="請輸入您的電話">
+         <input type="email" id="register_email" name="register_email" placeholder="請輸入您的電子信箱">
+         <input type="text" id="register_address" name="register_address" placeholder="請輸入您的住址">
+      </form>
+      <a class="login_btn" href="#">加入會員</a>
+   </div>
+   <div class="contactModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>聯絡我們</h3>
+      <form action="#">
+         <input type="text" id="contact_title" name="contact_title" placeholder="請輸入標題">
+         <input type="text" id="contact_name" name="contact_name" placeholder="請輸入您的姓名">
+         <input type="tel" id="contact_phone" name="contact_phone" placeholder="請輸入您的電話">
+         <input type="email" id="contact_email" name="contact_email" placeholder="請輸入您的電子信箱">
+         <textarea id="detail" name="contact_detail" placeholder="請輸入留言內容"></textarea>
+      </form>
+      <a class="login_btn" href="#">送出</a>
+   </div>
+   <div class="mask"></div>  
+
+   <!-- ... Mobile Header ... -->
+   <header class="mobile_header">
+      <div class="mobile_menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="mobile_logo">
+         <a href="index.html">
+            <img src="images/Header_logo.png" alt="房多多商標" />
+         </a>
+      </div>
+   </header>
+   <div class="menu">
+      <nav class="mobile_header_nav clearfix">
+         <ul>
+            <li><a href="about.html">關於房多多</a></li>
+            <li><a href="knowledge.html">知識文章</a></li>
+            <li><a href="speech.html">報名講座</a></li>
+            <li><a href="onlineClass.html">線上課程</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="question.html">常見問題</a></li>
+            <li><a href="analysis.html">數據分析</a></li>
+            <li><a href="member_data.html">會員中心</a></li>
+            <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
+            <li><a href="rule.html">條款小站</a></li>
+            <li><a class="member_login_btn" href="#">登入</a></li>
+            <li><a href="#">登出</a></li>
+         </ul>
+      </nav>
+   </div>
+
+   <!-- ... Header ... -->
+   <header class="desktop_header_box">
+      <div class="desktop_header_content clearfix">
+         <h1><a href="index.html"><img class="Header_logo" src="images/Header_logo.png" alt="房多多商標" title="房多多"></a></h1>
+         <nav class="desktop_header_nav clearfix">
+            <ul>
+               <li><a href="about.html">關於房多多</a></li>
+               <li><a href="knowledge.html">知識文章</a></li>
+               <li><a href="speech.html">報名講座</a></li>
+               <li><a href="onlineClass.html">線上課程</a></li>
+               <li><a href="news.html">最新消息</a></li>
+               <li><a href="question.html">常見問題</a></li>
+               <li><a href="analysis.html">數據分析</a></li>
+               <li><a href="member_data.html">會員中心</a></li>
+               <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
+               <li><a class="member_login_btn" href="#">登入</a></li>
+               <li><a href="#">登出</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <!-- ... Banner -->
+   <section class="banner_box">
+      <div class="banner_content">
+         <h2>Speech</h2>
+         <div class="banner_content_text">
+            <h3>報名講座</h3>
+         </div>
+      </div>
+   </section>
+
+   <!-- ... Content -->
+   <section class="container">
+      <div class="bread_crumb">
+         <a href="index.html"><i class="fa fa-1g fa-home"></i>首頁</a><a href="speech.html"><i class="fa fa-angle-right"></i>報名講座</a><i class="fa fa-angle-right"></i>報名成功
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_1 speech_tab_current clearfix" id="tab_1">
+         <h2 class="news_main_title text_center">恭喜您報名成功</h2>
+            <div class="speech_form no_margin_top">
+              <form action="#">
+                 <div class="form_text speech_success_form_text clearfix">
+                     <label class="form_text_title" for="speech_name">姓名</label>
+                     <input type="text" id="speech_name" class="no_border" name="speech_name">
+                 </div>
+                 <div class="form_text speech_success_form_text clearfix">
+                     <label class="form_text_title" for="speech_phone">電話</label>
+                     <input type="tel" id="speech_phone" class="no_border" name="speech_phone">
+                 </div>
+                 <div class="form_text speech_success_form_text clearfix">
+                     <label class="form_text_title" for="speech_line">LINE ID</label>
+                     <input type="text" id="speech_line" class="no_border" name="speech_line">
+                 </div>
+                 <div class="form_text speech_success_form_text clearfix">
+                     <label class="form_text_title" for="speech_email">Email</label>
+                     <input type="email" id="speech_email" class="no_border" name="speech_email">
+                 </div>
+                 <div class="form_text speech_success_form_text clearfix">
+                     <p class="padding0">立馬參加分享說明會</p>
+                     <div class="form_radio_box clearfix">
+                        <div class="form_radio_text success_text">
+                           <label for="Tainan_place">2/07 台南平日場 14：00-16：00</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form_text speech_success_form_text clearfix">
+                     <p class="padding0">我對此房地產的課有興趣，但這次來不及，請下次再通知我~</p>
+                     <div class="form_radio_box clearfix">
+                        <div class="form_radio_text success_text">
+                           <label for="Reserve_Taipei_place">預約台北場</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form_text speech_success_form_text clearfix">
+                     <label class="form_text_title mobile_form_textarea" for="textarea_text">請問是從哪裡得知消息? 誰介紹你的?</label>
+                     <textarea id="textarea_text" class="no_border" name="textarea_text" placeholder="您的回答">朋友介紹的</textarea>
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">提交</a>
+            </div>
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_2 clearfix" id="tab_2">
+         <h2 class="news_main_title">北部地區｜職場英文的跨國會議必修課</h2>
+         <img src="images/NewsInfo_photo.jpg" alt="消息照片" title="職場英文的跨國會議必修課">
+            <div class="speech_form">
+              <form action="#">
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_name">姓名</label>
+                     <input type="text" id="speech_name" name="speech_name" placeholder="請輸入您的姓名">
+                 </div>
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_phone">電話</label>
+                     <input type="tel" id="speech_phone" name="speech_phone" placeholder="請輸入您的電話">
+                 </div>
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_line">LINE ID</label>
+                     <input type="text" id="speech_line" name="speech_line" placeholder="請輸入您的LINE ID">
+                 </div>
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_email">Email</label>
+                     <input type="email" id="speech_email" name="speech_email" placeholder="請輸入您的電子信箱">
+                 </div>
+                 <div class="form_text clearfix">
+                     <p class="padding0">立馬參加分享說明會</p>
+                     <div class="form_radio_box clearfix">
+                        <div class="form_radio_text">
+                           <input type="radio" id="Tainan_place" name="Weekend_place" checked>
+                           <label for="Tainan_place">2/07 台南平日場 14：00-16：00</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Kaohsiung_place" name="Weekend_place">
+                           <label for="Kaohsiung_place">12/08 高雄平日場 14：00-16：00</label> 
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Taipei_place" name="Weekend_place">
+                           <label for="Taipei_place">12/11 台北平日場 18：30-21：00</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Taichung_place" name="Weekend_place">
+                           <label for="Taichung_place">12/13 台中假日場 14：00-16：00</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Other_place" name="Weekend_place">
+                           <label for="Other_place">其他</label>
+                        </div>  
+                        <input type="text">
+                        </div>
+                  </div>
+                  <div class="form_text clearfix">
+                     <p class="padding0">我對此房地產的課有興趣，但這次來不及，請下次再通知我~</p>
+                     <div class="form_radio_box clearfix">
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Taipei_place" name="Reserve_place" checked>
+                           <label for="Reserve_Taipei_place">預約台北場</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Taichung_place" name="Reserve_place">
+                           <label for="Reserve_Taichung_place">預約台中場</label> 
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Tainan_place" name="Reserve_place">
+                           <label for="Reserve_Tainan_place">預約台南場</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Kaohsiung_place" name="Reserve_place">
+                           <label for="Reserve_Kaohsiung_place">預約高雄場</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title mobile_form_textarea" for="textarea_text">請問是從哪裡得知消息? 誰介紹你的?</label>
+                     <textarea id="textarea_text" name="textarea_text" placeholder="您的回答"></textarea>
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">提交</a>
+            </div>
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_3">
+         <h2 class="news_main_title">南部地區｜職場英文大補帖</h2>
+         <img src="images/NewsInfo_photo.jpg" alt="消息照片" title="職場英文大補帖">
+            <div class="speech_form">
+              <form action="#">
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_name">姓名</label>
+                     <input type="text" id="speech_name" name="speech_name" placeholder="請輸入您的姓名">
+                 </div>
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_phone">電話</label>
+                     <input type="tel" id="speech_phone" name="speech_phone" placeholder="請輸入您的電話">
+                 </div>
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_line">LINE ID</label>
+                     <input type="text" id="speech_line" name="speech_line" placeholder="請輸入您的LINE ID">
+                 </div>
+                 <div class="form_text clearfix">
+                     <label class="form_text_title" for="speech_email">Email</label>
+                     <input type="email" id="speech_email" name="speech_email" placeholder="請輸入您的電子信箱">
+                 </div>
+                 <div class="form_text clearfix">
+                     <p class="padding0">立馬參加分享說明會</p>
+                     <div class="form_radio_box clearfix">
+                        <div class="form_radio_text">
+                           <input type="radio" id="Tainan_place" name="Weekend_place" checked>
+                           <label for="Tainan_place">2/07 台南平日場 14：00-16：00</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Kaohsiung_place" name="Weekend_place">
+                           <label for="Kaohsiung_place">12/08 高雄平日場 14：00-16：00</label> 
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Taipei_place" name="Weekend_place">
+                           <label for="Taipei_place">12/11 台北平日場 18：30-21：00</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Taichung_place" name="Weekend_place">
+                           <label for="Taichung_place">12/13 台中假日場 14：00-16：00</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Other_place" name="Weekend_place">
+                           <label for="Other_place">其他</label>
+                        </div>  
+                        <input type="text">
+                        </div>
+                  </div>
+                  <div class="form_text clearfix">
+                     <p class="padding0">我對此房地產的課有興趣，但這次來不及，請下次再通知我~</p>
+                     <div class="form_radio_box clearfix">
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Taipei_place" name="Reserve_place" checked>
+                           <label for="Reserve_Taipei_place">預約台北場</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Taichung_place" name="Reserve_place">
+                           <label for="Reserve_Taichung_place">預約台中場</label> 
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Tainan_place" name="Reserve_place">
+                           <label for="Reserve_Tainan_place">預約台南場</label>
+                        </div>
+                        <div class="form_radio_text">
+                           <input type="radio" id="Reserve_Kaohsiung_place" name="Reserve_place">
+                           <label for="Reserve_Kaohsiung_place">預約高雄場</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title mobile_form_textarea" for="textarea_text">請問是從哪裡得知消息? 誰介紹你的?</label>
+                     <textarea id="textarea_text" name="textarea_text" placeholder="您的回答"></textarea>
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">提交</a>
+            </div>
+      </div>
+   </section>
+
+   <!-- ... Footer ... -->
+   <footer class="footer_box">
+      <img class="footer_wave" src="images/Footer_wave.png" alt="Footer曲線設計">
+      <div class="footer_content clearfix">
+         <a href="index.html"><img class="Footer_logo" src="images/Footer_logo.png" alt="房多多商標" title="房多多"></a>
+         <div class="footer_menu">
+            <ul class="footer_menu_list clearfix">
+               <li><a href="about.html">關於房多多</a></li>
+               <li><a href="knowledge.html">知識文章</a></li>
+               <li><a href="speech.html">報名講座</a></li>
+               <li><a href="onlineClass.html">線上課程</a></li>
+               <li><a href="question.html">常見問題</a></li>
+               <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
+               <li><a href="rule.html">條款小站</a></li>
+            </ul>
+            <ul class="social_icon clearfix">
+               <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>
+               <li><img src="images/IG_icon.png" alt="IG" title="IG"></li>
+               <li><img src="images/Line_icon.png" alt="Line" title="Line"></li>
+            </ul>
+         </div>
+         <ul class="footer_contact clearfix">
+            <li>公司地址：<a href="https://goo.gl/maps/X7jCkPJeDSiWwcN17" target="_blank">高雄市前鎮區一心一路243號10樓</a></li>
+            <li>室內電話：<a href="tel:07-3310277">07-3310277</a></li>
+            <li>室內傳真：<a href="tel:07-3310217">07-3310217</a></li>
+            <li>電子信箱：<a href="mailto:fundodo1314@gmail.com?">fundodo1314@gmail.com</a></li>
+         </ul>
+      </div>
+   </footer>
+   <div class="footer_copyright">
+      <h6>Copyright © FUNDODO PLATFORM CO, LTD.2021</h6>
+   </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,202 +1,385 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-      <link href="css/normalize.css" rel="stylesheet" type="text/css">
-      <link href="css/style.css" rel="stylesheet" type="text/css">
-      <link href="css/slick.css" rel="stylesheet" type="text/css">
-      <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
-      <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-      <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
-      <title>房多多-數據分析</title>
-   </head>
-   <body>
-      <!-- ... Loading ... -->
-      <div id="loading_mask">
-         <p>FUNDODO</p>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+<title>房多多-數據分析</title>
+</head>
+<body>
+<!-- ... Loading ... -->
+<div id="loading_mask">
+   <p>FUNDODO</p>
+</div>
+<div id="wrapper">
+   <!-- ... Modal ... -->
+   <div class="loginModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>會員登入</h3>
+      <form action="#">
+         <input type="text" id="login_number" name="login_number" placeholder="請輸入您的帳號">
+         <input type="password" id="login_psw" name="login_psw" placeholder="請輸入您的密碼">
+      </form>
+      <a class="login_btn" href="#">會員登入</a>
+      <ul class="login_modal_link clearfix">
+         <li><a class="forget_psw" href="#">忘記密碼</a></li>
+         <li><a class="add_member" href="#">加入會員</a></li>
+      </ul>
+   </div>
+   <div class="forgetPswModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>忘記密碼</h3>
+      <form action="#">
+         <input type="text" id="forget_psw_number" name="forget_psw_number" placeholder="請輸入您的帳號">
+         <input type="email" id="forget_psw_email" name="forget_psw_email" placeholder="請輸入您的電子信箱">
+         <input type="password" id="forget_psw_psw" name="forget_psw_psw" placeholder="請輸入您的密碼">
+         <input type="password" id="forget_psw_confirm_psw" name="forget_psw_confirm_psw" placeholder="請再一次輸入您的密碼">
+      </form>
+      <a class="login_btn" href="#">重新設定密碼</a>
+   </div>
+   <div class="registerRuleModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>註冊條款</h3>
+      <div class="register_member_text">
+         <p>1.本網站謹遵循「個人資料保護法」之規範，合理蒐集使用者之資訊並利用，以保障使用者個人資料之安全。 依「個人資料保護法」第8條之規定，本網站將告知使用者以下事項： 本隱私權政策適用對象範圍包括因使用本網站、接受本網站所提供的服務、申請加入本網站會員，而提供本網站個人資料者。 本網頁係好市多多有限公司所有。 本網站所蒐集之資料係依好市多多有限公司與提供使用者之契約目的，履行對於使用者之契約義務並進行客戶管理及服務。本網站藉由使用者加入會員或進行交易之過程蒐集資料。 本網站所蒐集的個人資料內容包括：使用者之姓名、性別、生日、地址、電話、電子郵件、信用卡或金融機構帳戶資訊。 本網站蒐集個人資料所使用的期間為使用者加入後，至其要求停止接受本網站服務為止。 本網站所蒐集到之個人資料可能使用於全球各地區。 本網站所蒐集到之個人資料將使用於履行契約時所必要提供之對象及方式。例如客戶於本網站刷卡消費後，將提供消費記錄予金融機構進行扣款；客戶確定參與課程後，將提供可辨識個人之資訊予授課者或其團隊。</p>
+         <p>2.依「個人資料保護法」第3條之規定，本網站所蒐集個人資料之當事人得請求本網站提供其： 查詢或請求閱覽； 請求製給複製本； 請求補充或更正； 請求停止蒐集、處理或利用； 請求刪除。 個人資料之保護： 本網站會採取預防措施保護使用者的個人資料，避免遭盜用、濫用或任何未經許可之變更、揭露、存取刪除。 第三人揭露： 除有下列情形，本網站不會提供使用者之個人資料予其他人或法人： 一、徵得使用者之事先同意； 二、基於契約約定之使用目的； 三、基於法令規定。 隱私權政策之變更： 本網站的隱私權政策可能因為提供服務變更、法令變更或其他可能產生本網站資訊蒐集影響之情形，修改本隱私權政策。本隱私權政策變更時，會同時於本網站公布，以供使用者隨時閱覽。</p>
       </div>
-      <div id="wrapper">
-         <!-- ... Modal ... -->
-         <div class="loginModal">
-            <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
-            <h3>會員登入</h3>
-            <form action="#">
-               <input type="text" id="login_number" name="login_number" placeholder="請輸入您的帳號">
-               <input type="password" id="login_psw" name="login_psw" placeholder="請輸入您的密碼">
-            </form>
-            <a class="login_btn" href="#">會員登入</a>
-            <ul class="login_modal_link clearfix">
-               <li><a class="forget_psw" href="#">忘記密碼</a></li>
-               <li><a class="add_member" href="#">加入會員</a></li>
+      <ul class="register_member_btn clearfix">
+         <li><a class="agree_btn" href="#">同意</a></li>
+         <li><a class="disagree_btn" href="#">不同意</a></li>
+      </ul>
+   </div>
+   <div class="registerModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>加入會員</h3>
+      <form action="#">
+         <input type="text" id="register_name" name="register_name" placeholder="請輸入您的姓名">
+         <input type="text" id="register_number" name="register_number" placeholder="請輸入您的帳號">
+         <input type="password" id="register_password" name="register_password" placeholder="請輸入您的密碼">
+         <input type="tel" id="register_phone" name="register_phone" placeholder="請輸入您的電話">
+         <input type="email" id="register_email" name="register_email" placeholder="請輸入您的電子信箱">
+         <input type="text" id="register_address" name="register_address" placeholder="請輸入您的住址">
+      </form>
+      <a class="login_btn" href="#">加入會員</a>
+   </div>
+   <div class="contactModal">
+      <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
+      <h3>聯絡我們</h3>
+      <form action="#">
+         <input type="text" id="contact_title" name="contact_title" placeholder="請輸入標題">
+         <input type="text" id="contact_name" name="contact_name" placeholder="請輸入您的姓名">
+         <input type="tel" id="contact_phone" name="contact_phone" placeholder="請輸入您的電話">
+         <input type="email" id="contact_email" name="contact_email" placeholder="請輸入您的電子信箱">
+         <textarea id="detail" name="contact_detail" placeholder="請輸入留言內容"></textarea>
+      </form>
+      <a class="login_btn" href="#">送出</a>
+   </div>
+   <div class="mask"></div>  
+
+   <!-- ... Mobile Header ... -->
+   <header class="mobile_header">
+      <div class="mobile_menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="mobile_logo">
+         <a href="index.html">
+            <img src="images/Header_logo.png" alt="房多多商標" />
+         </a>
+      </div>
+   </header>
+   <div class="menu">
+      <nav class="mobile_header_nav clearfix">
+         <ul>
+            <li><a href="about.html">關於房多多</a></li>
+            <li><a href="knowledge.html">知識文章</a></li>
+            <li><a href="speech.html">報名講座</a></li>
+            <li><a href="onlineClass.html">線上課程</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="question.html">常見問題</a></li>
+            <li><a href="analysis.html">數據分析</a></li>
+            <li><a href="member_data.html">會員中心</a></li>
+            <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
+            <li><a href="rule.html">條款小站</a></li>
+            <li><a class="member_login_btn" href="#">登入</a></li>
+            <li><a href="#">登出</a></li>
+         </ul>
+      </nav>
+   </div>
+
+   <!-- ... Header ... -->
+   <header class="desktop_header_box">
+      <div class="desktop_header_content clearfix">
+         <h1><a href="index.html"><img class="Header_logo" src="images/Header_logo.png" alt="房多多商標" title="房多多"></a></h1>
+         <nav class="desktop_header_nav clearfix">
+            <ul>
+               <li><a href="about.html">關於房多多</a></li>
+               <li><a href="knowledge.html">知識文章</a></li>
+               <li><a href="speech.html">報名講座</a></li>
+               <li><a href="onlineClass.html">線上課程</a></li>
+               <li><a href="news.html">最新消息</a></li>
+               <li><a href="question.html">常見問題</a></li>
+               <li><a href="analysis.html">數據分析</a></li>
+               <li><a href="member_data.html">會員中心</a></li>
+               <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
+               <li><a class="member_login_btn" href="#">登入</a></li>
+               <li><a href="#">登出</a></li>
             </ul>
-         </div>
-         <div class="forgetPswModal">
-            <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
-            <h3>忘記密碼</h3>
-            <form action="#">
-               <input type="text" id="forget_psw_number" name="forget_psw_number" placeholder="請輸入您的帳號">
-               <input type="email" id="forget_psw_email" name="forget_psw_email" placeholder="請輸入您的電子信箱">
-               <input type="password" id="forget_psw_psw" name="forget_psw_psw" placeholder="請輸入您的密碼">
-               <input type="password" id="forget_psw_confirm_psw" name="forget_psw_confirm_psw" placeholder="請再一次輸入您的密碼">
-            </form>
-            <a class="login_btn" href="#">重新設定密碼</a>
-         </div>
-         <div class="registerRuleModal">
-            <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
-            <h3>註冊條款</h3>
-            <div class="register_member_text">
-               <p>1.本網站謹遵循「個人資料保護法」之規範，合理蒐集使用者之資訊並利用，以保障使用者個人資料之安全。 依「個人資料保護法」第8條之規定，本網站將告知使用者以下事項： 本隱私權政策適用對象範圍包括因使用本網站、接受本網站所提供的服務、申請加入本網站會員，而提供本網站個人資料者。 本網頁係好市多多有限公司所有。 本網站所蒐集之資料係依好市多多有限公司與提供使用者之契約目的，履行對於使用者之契約義務並進行客戶管理及服務。本網站藉由使用者加入會員或進行交易之過程蒐集資料。 本網站所蒐集的個人資料內容包括：使用者之姓名、性別、生日、地址、電話、電子郵件、信用卡或金融機構帳戶資訊。 本網站蒐集個人資料所使用的期間為使用者加入後，至其要求停止接受本網站服務為止。 本網站所蒐集到之個人資料可能使用於全球各地區。 本網站所蒐集到之個人資料將使用於履行契約時所必要提供之對象及方式。例如客戶於本網站刷卡消費後，將提供消費記錄予金融機構進行扣款；客戶確定參與課程後，將提供可辨識個人之資訊予授課者或其團隊。</p>
-               <p>2.依「個人資料保護法」第3條之規定，本網站所蒐集個人資料之當事人得請求本網站提供其： 查詢或請求閱覽； 請求製給複製本； 請求補充或更正； 請求停止蒐集、處理或利用； 請求刪除。 個人資料之保護： 本網站會採取預防措施保護使用者的個人資料，避免遭盜用、濫用或任何未經許可之變更、揭露、存取刪除。 第三人揭露： 除有下列情形，本網站不會提供使用者之個人資料予其他人或法人： 一、徵得使用者之事先同意； 二、基於契約約定之使用目的； 三、基於法令規定。 隱私權政策之變更： 本網站的隱私權政策可能因為提供服務變更、法令變更或其他可能產生本網站資訊蒐集影響之情形，修改本隱私權政策。本隱私權政策變更時，會同時於本網站公布，以供使用者隨時閱覽。</p>
-            </div>
-            <ul class="register_member_btn clearfix">
-               <li><a class="agree_btn" href="#">同意</a></li>
-               <li><a class="disagree_btn" href="#">不同意</a></li>
-            </ul>
-         </div>
-         <div class="registerModal">
-            <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
-            <h3>加入會員</h3>
-            <form action="#">
-               <input type="text" id="register_name" name="register_name" placeholder="請輸入您的姓名">
-               <input type="text" id="register_number" name="register_number" placeholder="請輸入您的帳號">
-               <input type="password" id="register_password" name="register_password" placeholder="請輸入您的密碼">
-               <input type="tel" id="register_phone" name="register_phone" placeholder="請輸入您的電話">
-               <input type="email" id="register_email" name="register_email" placeholder="請輸入您的電子信箱">
-               <input type="text" id="register_address" name="register_address" placeholder="請輸入您的住址">
-            </form>
-            <a class="login_btn" href="#">加入會員</a>
-         </div>
-         <div class="contactModal">
-            <img class="modal_close_icon" src="images/modal_close_icon.png" alt="Modal關閉按鈕">
-            <h3>聯絡我們</h3>
-            <form action="#">
-               <input type="text" id="contact_title" name="contact_title" placeholder="請輸入標題">
-               <input type="text" id="contact_name" name="contact_name" placeholder="請輸入您的姓名">
-               <input type="tel" id="contact_phone" name="contact_phone" placeholder="請輸入您的電話">
-               <input type="email" id="contact_email" name="contact_email" placeholder="請輸入您的電子信箱">
-               <textarea id="detail" name="contact_detail" placeholder="請輸入留言內容"></textarea>
-            </form>
-            <a class="login_btn" href="#">送出</a>
-         </div>
-         <div class="mask"></div>  
+         </nav>
+      </div>
+   </header>
 
-         <!-- ... Mobile Header ... -->
-         <header class="mobile_header">
-            <div class="mobile_menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="mobile_logo">
-               <a href="index.html">
-                  <img src="images/Header_logo.png" alt="房多多商標" />
-               </a>
-            </div>
-         </header>
-         <div class="menu">
-            <nav class="mobile_header_nav clearfix">
-               <ul>
-                  <li><a href="about.html">關於房多多</a></li>
-                  <li><a href="knowledge.html">知識文章</a></li>
-                  <li><a href="speech.html">報名講座</a></li>
-                  <li><a href="onlineClass.html">線上課程</a></li>
-                  <li><a href="news.html">最新消息</a></li>
-                  <li><a href="question.html">常見問題</a></li>
-                  <li><a href="analysis.html">數據分析</a></li>
-                  <li><a href="member_data.html">會員中心</a></li>
-                  <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
-                  <li><a href="rule.html">條款小站</a></li>
-                  <li><a class="member_login_btn" href="#">登入</a></li>
-                  <li><a href="#">登出</a></li>
-               </ul>
-            </nav>
-         </div>
-
-         <!-- ... Header ... -->
-         <header class="desktop_header_box">
-            <div class="desktop_header_content clearfix">
-               <h1><a href="index.html"><img class="Header_logo" src="images/Header_logo.png" alt="房多多商標" title="房多多"></a></h1>
-               <nav class="desktop_header_nav clearfix">
-                  <ul>
-                     <li><a href="about.html">關於房多多</a></li>
-                     <li><a href="knowledge.html">知識文章</a></li>
-                     <li><a href="speech.html">報名講座</a></li>
-                     <li><a href="onlineClass.html">線上課程</a></li>
-                     <li><a href="news.html">最新消息</a></li>
-                     <li><a href="question.html">常見問題</a></li>
-                     <li><a href="analysis.html">數據分析</a></li>
-                     <li><a href="member_data.html">會員中心</a></li>
-                     <li><a class="member_contact_btn" href="#">聯絡我們</a></li>
-                     <li><a class="member_login_btn" href="#">登入</a></li>
-                     <li><a href="#">登出</a></li>
-                  </ul>
-               </nav>
-            </div>
-         </header>
-
-         <!-- ... Banner -->
-         <section class="banner_box">
-            <div class="banner_content">
-               <h2>Analysis</h2>
-               <div class="banner_content_text">
-                  <h3>數據分析</h3>
-               </div>
-            </div>
-         </section>
-
-         <!-- ... Content -->
-         <section class="container">
-            <div class="bread_crumb">
-               <a href="index.html"><i class="fa fa-1g fa-home"></i>首頁</a><i class="fa fa-angle-right"></i>數據分析
-            </div>
-            <div>
-               <div style="margin-top:26px;">
-                  <p>數據分析施工中</p>
-               </div>
-            </div>
-         </section>
-
-         <!-- ... Footer ... -->
-         <footer class="footer_box">
-            <img class="footer_wave" src="images/Footer_wave.png" alt="Footer曲線設計">
-            <div class="footer_content clearfix">
-               <a href="index.html"><img class="Footer_logo" src="images/Footer_logo.png" alt="房多多商標" title="房多多"></a>
-               <div class="footer_menu">
-                  <ul class="footer_menu_list clearfix">
-                     <li><a href="about.html">關於房多多</a></li>
-                     <li><a href="knowledge.html">知識文章</a></li>
-                     <li><a href="speech.html">報名講座</a></li>
-                     <li><a href="onlineClass.html">線上課程</a></li>
-                     <li><a href="question.html">常見問題</a></li>
-                     <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
-                     <li><a href="rule.html">條款小站</a></li>
-                  </ul>
-                  <ul class="social_icon clearfix">
-                     <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>
-                     <li><img src="images/IG_icon.png" alt="IG" title="IG"></li>
-                     <li><img src="images/Line_icon.png" alt="Line" title="Line"></li>
-                  </ul>
-               </div>
-               <ul class="footer_contact clearfix">
-                  <li>公司地址：<a href="https://goo.gl/maps/X7jCkPJeDSiWwcN17" target="_blank">高雄市前鎮區一心一路243號10樓</a></li>
-                  <li>室內電話：<a href="tel:07-3310277">07-3310277</a></li>
-                  <li>室內傳真：<a href="tel:07-3310217">07-3310217</a></li>
-                  <li>電子信箱：<a href="mailto:fundodo1314@gmail.com?">fundodo1314@gmail.com</a></li>
-               </ul>
-            </div>
-         </footer>
-         <div class="footer_copyright">
-            <h6>Copyright © FUNDODO PLATFORM CO, LTD.2021</h6>
+   <!-- ... Banner -->
+   <section class="banner_box">
+      <div class="banner_content">
+         <h2>Analysis</h2>
+         <div class="banner_content_text">
+            <h3>數據分析</h3>
          </div>
       </div>
-      <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-      <script type="text/javascript" src="js/owl.carousel.js"></script>
-      <script type="text/javascript" src="js/slick.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
-   </body>
+   </section>
+
+   <!-- ... Content -->
+   <section class="container">
+      <div class="bread_crumb">
+         <a href="index.html"><i class="fa fa-1g fa-home"></i>首頁</a><i class="fa fa-angle-right"></i>數據分析
+      </div>
+      <ul class="speech_tab_btn mobile_speech_tab_btn clearfix">
+         <li class="selected"><a href="#tab_1">轉貸等值利率</a></li>
+         <li><a href="#tab_2">理債</a></li>
+         <li><a href="#tab_3">房地產租金現值</a></li>
+         <li><a href="#tab_4">貸款年利率</a></li>
+         <li><a href="#tab_5">投資報酬率</a></li>
+         <li><a href="#tab_6">等值報酬率</a></li>
+      </ul>
+      <div class="news_detail_box speech_tab_content speech_tab_content_1 speech_tab_current clearfix" id="tab_1">
+         <h2 class="news_main_title">轉貸等值利率分析</h2>
+            <div class="speech_form no_margin_top">
+               <form action="#">
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="balance1">尚未欠款餘額</label>
+                     <input type="text" id="balance1" name="balance1" placeholder="請輸入您的尚未欠款餘額">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="balance2">未繳款期數</label>
+                     <input type="text" id="balance2" name="balance2" placeholder="請輸入您的未繳款期數">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="balance3">目前月繳本息金額</label>
+                     <input type="text" id="balance3" name="balance3" placeholder="請輸入您的目前月繳本息金額">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="balance4">轉貸衍生的費用總合</label>
+                     <input type="text" id="balance4" name="balance4" placeholder="請輸入您的轉貸衍生的費用總合">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="result">計算結果-轉貸等值利率</label>
+                     <input type="text" id="result" name="result">
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">開始計算</a>
+            </div>
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_2 clearfix" id="tab_2">
+         <h2 class="news_main_title">理債分析</h2>
+            <div class="speech_form no_margin_top">
+               <form action="#">
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="debt1">卡債餘額</label>
+                     <input type="text" id="debt1" name="debt1" placeholder="請輸入您的卡債餘額">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="debt2">收入</label>
+                     <input type="text" id="debt2" name="debt2" placeholder="請輸入您的收入">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="debt3">生活支出</label>
+                     <input type="text" id="debt3" name="debt3" placeholder="請輸入您的生活支出">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="debt4">信貸借款</label>
+                     <input type="text" id="debt4" name="debt4" placeholder="請輸入您的信貸借款">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="debt5">車貸借款</label>
+                     <input type="text" id="debt5" name="debt5" placeholder="請輸入您的車貸借款">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="debt6">房貸借款</label>
+                     <input type="text" id="debt6" name="debt6" placeholder="請輸入您的房貸借款">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="debt7">卡債利息</label>
+                     <input type="text" id="debt7" name="debt7" placeholder="請輸入您的車貸借款">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="result">計算結果-每月收支平衡</label>
+                     <input type="text" id="result" name="result">
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">開始計算</a>
+            </div>
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_3">
+         <h2 class="news_main_title">房地產租金現值分析</h2>
+            <div class="speech_form no_margin_top">
+               <form action="#">
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="real_estate1">目前年度租金</label>
+                     <input type="text" id="real_estate1" name="real_estate1" placeholder="請輸入您的目前年度租金">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="real_estate2">租金成長率</label>
+                     <input type="text" id="real_estate2" name="real_estate2" placeholder="請輸入您的租金成長率">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="real_estate3">投資報酬率</label>
+                     <input type="text" id="real_estate3" name="real_estate3" placeholder="請輸入您的投資報酬率">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="result">計算結果-房地產租金現值</label>
+                     <input type="text" id="result" name="result">
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">開始計算</a>
+            </div>
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_4">
+         <h2 class="news_main_title">貸款年利率分析</h2>
+            <div class="speech_form no_margin_top">
+               <form action="#">
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="loan1">房價</label>
+                     <input type="text" id="loan1" name="loan1" placeholder="請輸入您的房價">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="loan2">自備款</label>
+                     <input type="text" id="loan2" name="loan2" placeholder="請輸入您的自備款">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="loan3">貸款</label>
+                     <input type="text" id="loan3" name="loan3" placeholder="請輸入您的貸款">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="loan4">裝潢費用</label>
+                     <input type="text" id="loan4" name="loan4" placeholder="請輸入您的裝潢費用">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="loan5">月租金</label>
+                     <input type="text" id="loan5" name="loan5" placeholder="請輸入您的月租金">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="result">計算結果-貸款年利率</label>
+                     <input type="text" id="result" name="result">
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">開始計算</a>
+            </div>
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_5">
+         <h2 class="news_main_title">投資報酬率分析</h2>
+            <div class="speech_form no_margin_top">
+               <form action="#">
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="investment_1">租金年收入</label>
+                     <input type="text" id="investment_1" name="investment_1" placeholder="請輸入您的租金年收入">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="investment_2">利息(一年)</label>
+                     <input type="text" id="investment_2" name="investment_2" placeholder="請輸入您一年的利息">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="investment_3">每年淨收入</label>
+                     <input type="text" id="investment_3" name="investment_3" placeholder="請輸入您的每年淨收入">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="result">計算結果-投資報酬率</label>
+                     <input type="text" id="result" name="result">
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">開始計算</a>
+            </div>
+      </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_6">
+         <h2 class="news_main_title">等值報酬率分析</h2>
+            <div class="speech_form no_margin_top">
+               <form action="#">
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="equal_investment_1">租金報酬率</label>
+                     <input type="text" id="equal_investment_1" name="equal_investment_1" placeholder="請輸入您的租金報酬率">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="equal_investment_2">年租金</label>
+                     <input type="text" id="equal_investment_2" name="equal_investment_2" placeholder="請輸入您的年租金">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="equal_investment_3">每月租金</label>
+                     <input type="text" id="equal_investment_3" name="equal_investment_3" placeholder="請輸入您的每月租金">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="equal_investment_4">租金成長率</label>
+                     <input type="text" id="equal_investment_4" name="equal_investment_4" placeholder="請輸入您的租金成長率">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="equal_investment_5">通貨膨脹率</label>
+                     <input type="text" id="equal_investment_5" name="equal_investment_5" placeholder="請輸入您的通貨膨脹率">
+                  </div>
+                  <div class="form_text clearfix">
+                     <label class="form_text_title" for="result">計算結果-等值報酬率</label>
+                     <input type="text" id="result" name="result">
+                  </div>
+               </form>
+               <a href="#" class="speech_btn">開始計算</a>
+            </div>
+      </div>
+   </section>
+
+   <!-- ... Footer ... -->
+   <footer class="footer_box">
+      <img class="footer_wave" src="images/Footer_wave.png" alt="Footer曲線設計">
+      <div class="footer_content clearfix">
+         <a href="index.html"><img class="Footer_logo" src="images/Footer_logo.png" alt="房多多商標" title="房多多"></a>
+         <div class="footer_menu">
+            <ul class="footer_menu_list clearfix">
+               <li><a href="about.html">關於房多多</a></li>
+               <li><a href="knowledge.html">知識文章</a></li>
+               <li><a href="speech.html">報名講座</a></li>
+               <li><a href="onlineClass.html">線上課程</a></li>
+               <li><a href="question.html">常見問題</a></li>
+               <li><a class="contactModal" href="contact.html">聯絡我們</a></li>
+               <li><a href="rule.html">條款小站</a></li>
+            </ul>
+            <ul class="social_icon clearfix">
+               <li><img src="images/Fb_icon.png" alt="FB" title="FB"></li>
+               <li><img src="images/IG_icon.png" alt="IG" title="IG"></li>
+               <li><img src="images/Line_icon.png" alt="Line" title="Line"></li>
+            </ul>
+         </div>
+         <ul class="footer_contact clearfix">
+            <li>公司地址：<a href="https://goo.gl/maps/X7jCkPJeDSiWwcN17" target="_blank">高雄市前鎮區一心一路243號10樓</a></li>
+            <li>室內電話：<a href="tel:07-3310277">07-3310277</a></li>
+            <li>室內傳真：<a href="tel:07-3310217">07-3310217</a></li>
+            <li>電子信箱：<a href="mailto:fundodo1314@gmail.com?">fundodo1314@gmail.com</a></li>
+         </ul>
+      </div>
+   </footer>
+   <div class="footer_copyright">
+      <h6>Copyright © FUNDODO PLATFORM CO, LTD.2021</h6>
+   </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>

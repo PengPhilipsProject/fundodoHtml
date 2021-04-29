@@ -35,7 +35,7 @@ h4.rule_detail_title,ul.footer_contact,ul.footer_contact li a,ul.footer_menu_lis
 .news_author p,.news_article_text p,.question_info p,.rule_detail_box p,.about_text_detail p,.about_text_detail ol li,
 .house_platform_intro h3,ul.rule_list_text li {color: #4D4D4D;}
 ::placeholder,::-ms-input-placeholder {color: #4D4D4D;}
-.clearfix:after {clear: both; content: ""; display: block;}
+.clearfix:after {clear: both; content: ""; display: block;}fo
 #wrapper {position: relative;}
 
 /* --Header--------------------------------- */
@@ -176,6 +176,10 @@ span.about_text_point {color: #fe5c49;}
 }
 .form_text textarea {height: 250px; resize: none;}
 .form_text input[type="radio"] {margin-right: 4px;}
+.form_text input.no_border,.form_text textarea.no_border,
+.form_radio_text {border: none; box-shadow: none; color: #393939;}
+.success_text label {color: #393939; font-size: 16px!important; padding: 12px 10px;}
+textarea.no_border {height: 60px;}
 input[type="radio"]:checked,input[type="radio"]:not(:checked) {left: -9999px; position: absolute;}
 input[type="radio"]:checked + label,input[type="radio"]:not(:checked) + label {
     cursor: pointer;
@@ -228,7 +232,7 @@ a.speech_btn {
 .member_box .speech_form,.speech_form .form_text:first-child {margin-top: 0;}
 .member_box a.speech_btn {margin-top: 32px;}
 .container ul.speech_tab_btn {margin-bottom: 0;}
-.form_text p.padding0 {margin-top: -2px; padding: 0;}
+.form_text p.padding0 {margin-top: -3px; padding: 0;}
 ul.speech_tab_btn {padding-top: 32px;}
 ul.speech_tab_btn li { 
     border: 1px solid #9f9f9f;
@@ -238,8 +242,8 @@ ul.speech_tab_btn li {
     display: block; 
     float: left;
     font-size: 14px;
-    height: 38px; 
-    line-height: 34px;
+    height: 40px; 
+    line-height: 38px;
     margin-right: 16px;
     padding: 0;
     text-align: center;
@@ -250,6 +254,7 @@ ul.speech_tab_btn li.selected {background: #fe5c49; border: none; color: #fff;}
 ul.speech_tab_btn li.selected a {color: #fff; font-size: 14px; text-decoration: none;}
 .speech_tab_content {display: none;}
 .speech_tab_content.speech_tab_current {display: inherit;}
+.speech_form.no_margin_top {margin-top: 0;}
 
 /* --Online Class--------------------------------- */
 ul.online_class li {margin: 0 34px 44px 0;}
@@ -282,6 +287,7 @@ ul.news_box li h3 {
     text-align: justify;
 }
 .news_detail_box h2 {font-size: 34px; font-weight: 600; padding-bottom: 34px;}
+.news_detail_box h2.text_center {text-align: center;}
 .news_detail_box img {box-shadow: 0 20px 90px rgba(0,0,0,.15); width: 100%;}
 .news_author {padding-top: 28px;}
 .news_author p {font-size: 15px; font-weight: 400; line-height: 27px;}
@@ -731,13 +737,13 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     h2.knowledge_title {line-height: 36px; padding: 30px 0 0 0;}
     .banner_content h2 {font-size: 50px; margin: 0 8px 0 0;}
     .banner_content_text {margin-top: 10px;}
-    .speech_form {margin-top: 24px;}
+    .speech_form {margin-top: 20px;}
     .question_title,.question_info {padding: 10px 0 0 0;}
     .question_title {height: auto;}
     .question_title h1 {font-weight: 500; line-height: 24px; margin-left: 0;}
     .question_info p {margin: 0; width: 100%;}
     .form_radio_text {margin-top: 14px;}
-    .form_text input[type="text"],.form_text input[type="tel"],.form_text input[type="email"],.form_text textarea {margin-top: 14px;}
+    .form_text input[type="text"],.form_text input[type="tel"],.form_text input[type="email"],.form_text textarea {margin-top: 12px;}
     .footer_box {margin-top: 50px; padding: 38px 0;}
     .footer_content {padding: 0 20px;}
     .footer_content img.Footer_logo {display: block; float: none; max-width: 210px;}
@@ -765,7 +771,7 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     }
     .form_text {padding: 14px 0 22px 0;}
     .form_text:last-child {padding: 14px 0 0 0;}
-    .form_text label.form_text_title,.form_text p {padding: 0; text-align: justify; width: 32%;}
+    .form_text label.form_text_title,.form_text p {padding: 0; text-align: justify; width: 100%;}
     .form_radio_box {width: 68%;}
     .form_text p.padding0 {font-size: 16px; line-height: 26px;}
     .form_text label.mobile_form_textarea {float: none; width: 100%;}
@@ -776,6 +782,11 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     input[type="radio"]:checked + label:after,input[type="radio"]:not(:checked) + label:after {top: 8px;}
     a.speech_btn {height: 42px; line-height: 40px; margin-top: 30px;}
     ul.rule_list_text {margin-left: 0;}
+    .container ul.speech_tab_btn {display: flex; flex-wrap: wrap; flex-direction: row;}
+    .form_text input.no_border,.form_text textarea.no_border,.form_radio_text {padding: 0;}
+    .form_text.speech_success_form_text {padding: 14px 0;}
+    .form_text.speech_success_form_text:first-child {padding: 0 0 14px 0;}
+    .success_text label {padding: 12px 0;}
 }
 @media screen and (min-width:767px) and (max-width:1366px){
     .mobile_logo img {margin: 20px 10px 0 22px;}
@@ -784,7 +795,7 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     .banner_content h2 {font-size: 68px; margin: 0 10px 0 -4px;}
     .banner_content_text h3 {font-size: 20px;}
     .container {padding: 0 22px;}
-    .form_text label.form_text_title,.form_text p {padding: 0; width: 15%;}
+    .form_text label.form_text_title,.form_text p {padding: 0; width: 100%;}
     .form_radio_box {margin-top: 8px; width: 85%;}
     .form_text p.padding0,.form_radio_box {width: 100%;}
 }
@@ -796,6 +807,14 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
     .house_platform_intro li {float: left; margin-bottom: 26px; margin-right: 0;}
     .house_platform_intro li:last-child {margin-bottom: 0;}
     .house_platform_intro li img {max-width: 100%;}
+    .mobile_speech_tab_btn li {flex-basis: 49%; margin: 0 23px 18px 0;}
+    .mobile_speech_tab_btn li:nth-child(2n+2) {margin-right: 0;}
+}
+@media screen and (max-width:842px){
+    .mobile_speech_tab_btn li {flex-basis: 48.91%; margin: 0 23px 18px 0;}
+}
+@media screen and (max-width:776px){
+    .mobile_speech_tab_btn li {flex-basis: 48.72%; flex-direction: column; margin: 0 23px 18px 0;}
 }
 @media screen and (max-width:767px){
     .banner_box {padding: 100px 16px 36px 16px;}
@@ -808,18 +827,62 @@ a.speech_btn:hover {animation: button_pulse 1000ms linear 2 alternate;}
 @media screen and (max-width:750px){
     .onlineClass_video {height: 100%; width: 100%;}
 }
+@media screen and (max-width:659px){
+    .mobile_speech_tab_btn li {flex-basis: 48.62%;}
+}
+@media screen and (max-width:606px){
+    .mobile_speech_tab_btn li {margin: 0 23px 18px 0;}
+}
+@media screen and (max-width:614px){
+    .mobile_speech_tab_btn li {flex-basis: 48.52%;}
+}
 @media screen and (max-width:604px){
     ul.rule_detail_btn li {margin-right: 10px;}
 }
 @media screen and (max-width:586px){
     ul.rule_detail_btn li:last-child {margin-top: 14px;}
     .container ul.speech_tab_btn li:nth-child(3) {margin-top: 0;}
-    .container ul.speech_tab_btn li {margin-right: 10px; width: 100px;}
+    .container ul.speech_tab_btn li {width: 100px;}
+    .mobile_speech_tab_btn li {flex-basis: 47.82%; margin-right: 23px!important;}
+    .mobile_speech_tab_btn li:nth-child(2n+2) {float: right; margin-right: 0!important;}
+}
+@media screen and (max-width:562px){
+    .mobile_speech_tab_btn li {flex-basis: 47.72%;}
+}
+@media screen and (max-width:539px){
+    .mobile_speech_tab_btn li {flex-basis: 47.62%;}
+}
+@media screen and (max-width:518px){
+    .mobile_speech_tab_btn li {flex-basis: 47.52%;}
+}
+@media screen and (max-width:500px){
+    .mobile_speech_tab_btn li {flex-basis: 47.42%;}
+}
+@media screen and (max-width:482px){
+    .mobile_speech_tab_btn li {flex-basis: 47.32%;}
+}
+@media screen and (max-width:464px){
+    .mobile_speech_tab_btn li {flex-basis: 47.22%;}
 }
 @media screen and (max-width:455px){
     .container ul.speech_tab_btn li {width: 90px;}
     ul.rule_detail_btn li:nth-child(3) {margin-top: 14px;}
     .container ul.speech_tab_btn li:nth-child(3) {margin-top: 0;}
+}
+@media screen and (max-width:449px){
+    .mobile_speech_tab_btn li {flex-basis: 47.12%;}
+}
+@media screen and (max-width:434px){
+    .mobile_speech_tab_btn li {flex-basis: 47.02%;}
+}
+@media screen and (max-width:421px){
+    .mobile_speech_tab_btn li {flex-basis: 46.92%;}
+}
+@media screen and (max-width:408px){
+    .mobile_speech_tab_btn li {flex-basis: 46.82%;}
+}
+@media screen and (max-width:400px){
+    .mobile_speech_tab_btn li {flex-basis: 100%; margin-right: 0!important;}
 }
 @media screen and (max-width:360px){
     .banner_content h2 {font-size: 46px;}

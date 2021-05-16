@@ -1,4 +1,4 @@
-// JavaScript Document
+//JavaScript Document
 $(function(){
 	const $mobile_menu = $(".mobile_menu");
 	const $mobile_header_nav = $(".mobile_header_nav");
@@ -91,6 +91,20 @@ $(function(){
 		$(this).addClass("speech_tab_current").siblings().removeClass("speech_tab_current");
 		$($now_speech_tab).fadeIn(300);
 		return false;
+	});
+
+	//Analysis
+	function analysis_subtract(){	
+		let $invoice = parseFloat($("#invoice").val());
+		let $expenditure = parseFloat($("#expenditure").val()); 
+		let $car_debt = parseFloat($("#car_debt").val());
+		let $house_debt = parseFloat($("#house_deb").val());
+		let $card_debt = parseFloat($("#card_debt").val());
+		let $monthly_balance_result = $invoice-$expenditure-$car_debt-$house_debt-$card_debt;
+		$("#monthly_balance_result").val($monthly_balance_result);
+	}
+	$(".analysis_debt_btn").on("click",function(){
+		analysis_subtract();
 	});
 
 	//Slider

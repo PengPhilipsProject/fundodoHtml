@@ -155,192 +155,158 @@
          <a href="index.html"><i class="fa fa-1g fa-home"></i>首頁</a><i class="fa fa-angle-right"></i>數據分析
       </div>
       <ul class="speech_tab_btn mobile_speech_tab_btn clearfix">
-         <li class="selected"><a href="#tab_1">轉貸等值利率</a></li>
-         <li><a href="#tab_2">理債</a></li>
-         <li><a href="#tab_3">房地產租金現值</a></li>
-         <li><a href="#tab_4">貸款年利率</a></li>
-         <li><a href="#tab_5">投資報酬率</a></li>
-         <li><a href="#tab_6">等值報酬率</a></li>
+         <li class="selected"><a href="#tab_2">理債</a></li>
+         <li><a href="#tab_3">房地產內在價值</a></li>
+         <li><a href="#tab_4">租金/投資報酬率</a></li>
       </ul>
-      <div class="news_detail_box speech_tab_content speech_tab_content_1 speech_tab_current clearfix" id="tab_1">
-         <h2 class="news_main_title">轉貸等值利率分析</h2>
-            <div class="speech_form no_margin_top">
-               <form action="#">
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="balance1">尚未欠款餘額</label>
-                     <input type="text" id="balance1" name="balance1" placeholder="請輸入您的尚未欠款餘額">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="balance2">未繳款期數</label>
-                     <input type="text" id="balance2" name="balance2" placeholder="請輸入您的未繳款期數">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="balance3">目前月繳本息金額</label>
-                     <input type="text" id="balance3" name="balance3" placeholder="請輸入您的目前月繳本息金額">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="balance4">轉貸衍生的費用總合</label>
-                     <input type="text" id="balance4" name="balance4" placeholder="請輸入您的轉貸衍生的費用總合">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="result">計算結果-轉貸等值利率</label>
-                     <input type="text" id="result" name="result">
-                  </div>
-               </form>
-               <a href="#" class="speech_btn">開始計算</a>
-            </div>
-      </div>
-      <div class="news_detail_box speech_tab_content speech_tab_content_2 clearfix" id="tab_2">
-         <h2 class="news_main_title">理債分析</h2>
-            <div class="speech_form no_margin_top">
-               <form action="#">
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="debt1">卡債餘額</label>
-                     <input type="text" id="debt1" name="debt1" placeholder="請輸入您的卡債餘額">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="debt2">收入</label>
-                     <input type="text" id="debt2" name="debt2" placeholder="請輸入您的收入">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="debt3">生活支出</label>
-                     <input type="text" id="debt3" name="debt3" placeholder="請輸入您的生活支出">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="debt4">信貸借款</label>
-                     <input type="text" id="debt4" name="debt4" placeholder="請輸入您的信貸借款">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="debt5">車貸借款</label>
-                     <input type="text" id="debt5" name="debt5" placeholder="請輸入您的車貸借款">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="debt6">房貸借款</label>
-                     <input type="text" id="debt6" name="debt6" placeholder="請輸入您的房貸借款">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="debt7">卡債利息</label>
-                     <input type="text" id="debt7" name="debt7" placeholder="請輸入您的車貸借款">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="result">計算結果-每月收支平衡</label>
-                     <input type="text" id="result" name="result">
-                  </div>
-               </form>
-               <a href="#" class="speech_btn">開始計算</a>
-            </div>
+      <div class="news_detail_box speech_tab_content speech_tab_content_2 speech_tab_current clearfix" id="tab_2">
+         <div class="speech_form no_margin_top">
+            <h2 class="news_main_title">理債分析</h2>
+            <form action="#" name="analysis_debt_form">
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="invoice">收入</label>
+                  <input type="text" id="invoice" name="invoice" placeholder="請輸入您的收入">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="expenditure">生活支出</label>
+                  <input type="text" id="expenditure" name="expenditure" placeholder="請輸入您的生活支出">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="car_debt">車貸借款</label>
+                  <input type="text" id="car_debt" name="car_debt" placeholder="請輸入您的車貸借款">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="house_debt">房貸借款</label>
+                  <input type="text" id="house_debt" name="house_debt" placeholder="請輸入您的房貸借款">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="card_debt">卡債利息</label>
+                  <input type="text" id="card_debt" name="card_debt" placeholder="請輸入您的卡債利息">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="monthly_balance_result">計算結果-每月收支平衡</label>
+                  <input type="text" id="monthly_balance_result" name="monthly_balance_result">
+               </div>
+            </form>
+            <a href="#" class="speech_btn analysis_debt_btn">開始計算</a>
+         </div>
+         <div class="speech_form no_margin_top mt60">
+            <form action="#">
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="car_debt_balance">卡債餘額</label>
+                  <input type="text" id="car_debt_balance" name="car_debt_balance" placeholder="請輸入您的卡債餘額">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="car_debt_balance_result">計算結果-卡債利息</label>
+                  <input type="text" id="car_debt_balance_result" name="car_debt_balance_result">
+               </div>
+            </form>
+            <a href="#" class="speech_btn">開始計算</a>
+         </div>
       </div>
       <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_3">
-         <h2 class="news_main_title">房地產租金現值分析</h2>
-            <div class="speech_form no_margin_top">
-               <form action="#">
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="real_estate1">目前年度租金</label>
-                     <input type="text" id="real_estate1" name="real_estate1" placeholder="請輸入您的目前年度租金">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="real_estate2">租金成長率</label>
-                     <input type="text" id="real_estate2" name="real_estate2" placeholder="請輸入您的租金成長率">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="real_estate3">投資報酬率</label>
-                     <input type="text" id="real_estate3" name="real_estate3" placeholder="請輸入您的投資報酬率">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="result">計算結果-房地產租金現值</label>
-                     <input type="text" id="result" name="result">
-                  </div>
-               </form>
-               <a href="#" class="speech_btn">開始計算</a>
-            </div>
+         <div class="speech_form no_margin_top">
+            <h2 class="news_main_title">房地產內在價值分析</h2>
+            <form action="#">
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="year_rent">目前年度租金</label>
+                  <input type="text" id="year_rent" name="year_rent" placeholder="請輸入您的目前年度租金">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="rent_growth">租金成長率</label>
+                  <input type="text" id="rent_growth" name="rent_growth" placeholder="請輸入您的租金成長率">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="investment_rate">投資報酬率</label>
+                  <input type="text" id="investment_rat" name="investment_rat" placeholder="請輸入您的投資報酬率">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="future_money_result">計算結果-未來租金現值</label>
+                  <input type="text" id="future_money_result" name="future_money_result">
+               </div>
+            </form>
+            <a href="#" class="speech_btn">開始計算</a>
+         </div>
       </div>
       <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_4">
-         <h2 class="news_main_title">貸款年利率分析</h2>
-            <div class="speech_form no_margin_top">
-               <form action="#">
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="loan1">房價</label>
-                     <input type="text" id="loan1" name="loan1" placeholder="請輸入您的房價">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="loan2">自備款</label>
-                     <input type="text" id="loan2" name="loan2" placeholder="請輸入您的自備款">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="loan3">貸款</label>
-                     <input type="text" id="loan3" name="loan3" placeholder="請輸入您的貸款">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="loan4">裝潢費用</label>
-                     <input type="text" id="loan4" name="loan4" placeholder="請輸入您的裝潢費用">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="loan5">月租金</label>
-                     <input type="text" id="loan5" name="loan5" placeholder="請輸入您的月租金">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="result">計算結果-貸款年利率</label>
-                     <input type="text" id="result" name="result">
-                  </div>
-               </form>
-               <a href="#" class="speech_btn">開始計算</a>
-            </div>
-      </div>
-      <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_5">
-         <h2 class="news_main_title">投資報酬率分析</h2>
-            <div class="speech_form no_margin_top">
-               <form action="#">
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="investment_1">租金年收入</label>
-                     <input type="text" id="investment_1" name="investment_1" placeholder="請輸入您的租金年收入">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="investment_2">利息(一年)</label>
-                     <input type="text" id="investment_2" name="investment_2" placeholder="請輸入您一年的利息">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="investment_3">每年淨收入</label>
-                     <input type="text" id="investment_3" name="investment_3" placeholder="請輸入您的每年淨收入">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="result">計算結果-投資報酬率</label>
-                     <input type="text" id="result" name="result">
-                  </div>
-               </form>
-               <a href="#" class="speech_btn">開始計算</a>
-            </div>
-      </div>
-      <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_6">
-         <h2 class="news_main_title">等值報酬率分析</h2>
-            <div class="speech_form no_margin_top">
-               <form action="#">
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="equal_investment_1">租金報酬率</label>
-                     <input type="text" id="equal_investment_1" name="equal_investment_1" placeholder="請輸入您的租金報酬率">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="equal_investment_2">年租金</label>
-                     <input type="text" id="equal_investment_2" name="equal_investment_2" placeholder="請輸入您的年租金">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="equal_investment_3">每月租金</label>
-                     <input type="text" id="equal_investment_3" name="equal_investment_3" placeholder="請輸入您的每月租金">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="equal_investment_4">租金成長率</label>
-                     <input type="text" id="equal_investment_4" name="equal_investment_4" placeholder="請輸入您的租金成長率">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="equal_investment_5">通貨膨脹率</label>
-                     <input type="text" id="equal_investment_5" name="equal_investment_5" placeholder="請輸入您的通貨膨脹率">
-                  </div>
-                  <div class="form_text clearfix">
-                     <label class="form_text_title" for="result">計算結果-等值報酬率</label>
-                     <input type="text" id="result" name="result">
-                  </div>
-               </form>
-               <a href="#" class="speech_btn">開始計算</a>
-            </div>
+         <div class="speech_form no_margin_top">
+            <h2 class="news_main_title">貸款比率分析</h2>
+            <form action="#">
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="house_fe1">房屋金額</label>
+                  <input type="text" id="house_fee1" name="house_fee1" placeholder="請輸入您的房屋金額">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="own_money">自備款</label>
+                  <input type="text" id="own_money" name="own_money" placeholder="請輸入您的自備款">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="house_decorate_fee1">裝潢費用</label>
+                  <input type="text" id="house_decorate_fee1" name="house_decorate_fee1" placeholder="請輸入您的裝潢費用">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="monthly_rate">月租金</label>
+                  <input type="text" id="monthly_rate" name="monthly_rate" placeholder="請輸入您的月租金">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="loan_year_rate">貸款年利率</label>
+                  <input type="text" id="loan_year_rate" name="loan_year_rate" placeholder="請輸入您的貸款年利率">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="loan_result">計算結果-貸款</label>
+                  <input type="text" id="loan_result" name="loan_result">
+               </div>
+            </form>
+            <a href="#" class="speech_btn">開始計算</a>
+         </div>
+         <div class="speech_form no_margin_top mt60">
+            <h2 class="news_main_title">投資報酬率分析</h2>
+            <form action="#">
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="year_rent_fee">租金年收入</label>
+                  <input type="text" id="year_rent_fee" name="year_rent_fee" placeholder="請輸入您的租金年收入">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="year_rate">一年利息</label>
+                  <input type="text" id="year_rate" name="year_rate" placeholder="請輸入您的一年利息">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="year_total_fee">每年淨收入</label>
+                  <input type="text" id="year_total_fee" name="year_total_fee" placeholder="請輸入您的每年淨收入">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="investment_rate">計算結果-投資報酬率</label>
+                  <input type="text" id="investment_rate" name="investment_rate">
+               </div>
+            </form>
+            <a href="#" class="speech_btn">開始計算</a>
+         </div>
+         <div class="speech_form no_margin_top mt60">
+            <h2 class="news_main_title">租金報酬率分析</h2>
+            <form action="#">
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="house_fee2">房屋金額</label>
+                  <input type="text" id="house_fee2" name="house_fee2" placeholder="請輸入您的房屋金額">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="house_decorate_fee2">裝潢費用</label>
+                  <input type="text" id="house_decorate_fee2" name="house_decorate_fee2" placeholder="請輸入您的裝潢費用">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="monthly_rent_fee">月租金</label>
+                  <input type="text" id="monthly_rent_fee" name="monthly_rent_fee" placeholder="請輸入您的月租金">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="total_investment_fee">總投資金額</label>
+                  <input type="text" id="total_investment_fee" name="total_investment_fee" placeholder="請輸入您的總投資金額">
+               </div>
+               <div class="form_text clearfix">
+                  <label class="form_text_title" for="money_rate_result">計算結果-租金報酬率</label>
+                  <input type="text" id="money_rate_result" name="money_rate_result">
+               </div>
+            </form>
+            <a href="#" class="speech_btn">開始計算</a>
+         </div>
       </div>
    </section>
 

@@ -1,4 +1,5 @@
-//JavaScript Document
+'use strict';
+
 $(function(){
 	const $mobile_menu = $(".mobile_menu");
 	const $mobile_header_nav = $(".mobile_header_nav");

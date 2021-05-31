@@ -184,9 +184,9 @@
                </div>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="textMonthlyBalanceResult">計算結果-每月收支平衡</label>
-                  <input type="text" id="textMonthlyBalanceResult" value="0">
+                  <input type="text" id="textMonthlyBalanceResult" value="0" readonly>
                </div>
-            <a href="#" class="speech_btn analysis_debt_btn">開始計算</a>
+            <a href="#" class="speech_btn">開始計算</a>
          </div>
          <div class="speech_form no_margin_top mt60">
             <form action="#">
@@ -226,87 +226,89 @@
             <a href="#" class="speech_btn">開始計算</a>
          </div>
       </div>
+	  
+	  <!-- sheet3 begin -->
       <div class="news_detail_box speech_tab_content speech_tab_content_3 clearfix" id="tab_4">
          <div class="speech_form no_margin_top">
             <h2 class="news_main_title">貸款比率分析</h2>
-            <form action="#">
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="house_fe1">房屋金額</label>
-                  <input type="text" id="house_fee1" name="house_fee1" placeholder="請輸入您的房屋金額">
+                  <label class="form_text_title" for="houseFee1">房屋金額</label>
+                  <input type="text" id="houseFee1" placeholder="請輸入您的房屋金額">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="own_money">自備款</label>
-                  <input type="text" id="own_money" name="own_money" placeholder="請輸入您的自備款">
+                  <label class="form_text_title" for="ownMoney">自備款</label>
+                  <input type="text" id="ownMoney" placeholder="請輸入您的自備款">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="house_decorate_fee1">裝潢費用</label>
-                  <input type="text" id="house_decorate_fee1" name="house_decorate_fee1" placeholder="請輸入您的裝潢費用">
+                  <label class="form_text_title" for="houseDecorateFee1">裝潢費用</label>
+                  <input type="text" id="houseDecorateFee1" placeholder="請輸入您的裝潢費用">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="monthly_rate">月租金</label>
-                  <input type="text" id="monthly_rate" name="monthly_rate" placeholder="請輸入您的月租金">
+                  <label class="form_text_title" for="monthlyRate">月租金</label>
+                  <input type="text" id="monthlyRate" placeholder="請輸入您的月租金">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="loan_year_rate">貸款年利率</label>
-                  <input type="text" id="loan_year_rate" name="loan_year_rate" placeholder="請輸入您的貸款年利率">
+                  <label class="form_text_title" for="loanYearRate">貸款年利率(%),輸入0-100整數</label>
+                  <input type="text" id="loanYearRate" placeholder="請輸入您的貸款年利率">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="loan_result">計算結果-貸款</label>
-                  <input type="text" id="loan_result" name="loan_result">
+                  <label class="form_text_title" for="loanResult">計算結果-貸款</label>
+                  <input type="text" id="textLoanResult" value="0" readonly>
                </div>
-            </form>
-            <a href="#" class="speech_btn">開始計算</a>
+          
          </div>
          <div class="speech_form no_margin_top mt60">
             <h2 class="news_main_title">投資報酬率分析</h2>
-            <form action="#">
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="year_rent_fee">租金年收入</label>
-                  <input type="text" id="year_rent_fee" name="year_rent_fee" placeholder="請輸入您的租金年收入">
+                  <label class="form_text_title" for="yearRentFee">租金年收入</label>
+                  <input type="text" id="yearRentFee" readonly>
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="year_rate">一年利息</label>
-                  <input type="text" id="year_rate" name="year_rate" placeholder="請輸入您的一年利息">
+                  <label class="form_text_title" for="yearRate">一年利息</label>
+                  <input type="text" id="yearRate" readonly>
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="year_total_fee">每年淨收入</label>
-                  <input type="text" id="year_total_fee" name="year_total_fee" placeholder="請輸入您的每年淨收入">
+                  <label class="form_text_title" for="yearTotalFee">每年淨收入</label>
+                  <input type="text" id="yearTotalFee" readonly>
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="investment_rate">計算結果-投資報酬率</label>
-                  <input type="text" id="investment_rate" name="investment_rate">
+                  <label class="form_text_title" for="investmentRate">計算結果-投資報酬率</label>
+                  <input type="text" id="investmentRate" value="0" readonly>
                </div>
-            </form>
-            <a href="#" class="speech_btn">開始計算</a>
+            <!-- <a href="#" class="speech_btn" id="investmentRateBtn">開始計算</a> -->
+			
+			<a href="#" class="speech_btn" id="loanResultBtn">開始計算</a>
          </div>
+		 
          <div class="speech_form no_margin_top mt60">
             <h2 class="news_main_title">租金報酬率分析</h2>
-            <form action="#">
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="house_fee2">房屋金額</label>
-                  <input type="text" id="house_fee2" name="house_fee2" placeholder="請輸入您的房屋金額" value="0">
+                  <label class="form_text_title" for="houseFee2">房屋金額</label>
+                  <input type="text" id="houseFee2" placeholder="請輸入您的房屋金額" value="0" >
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="house_decorate_fee2">裝潢費用</label>
-                  <input type="text" id="house_decorate_fee2" name="house_decorate_fee2" placeholder="請輸入您的裝潢費用" value="0">
+                  <label class="form_text_title" for="houseDecorateFee2">裝潢費用</label>
+                  <input type="text" id="houseDecorateFee2" placeholder="請輸入您的裝潢費用" value="0">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="monthly_rent_fee">月租金</label>
-                  <input type="text" id="monthly_rent_fee" name="monthly_rent_fee" placeholder="請輸入您的月租金" value="0">
+                  <label class="form_text_title" for="monthlyRentFee">月租金</label>
+                  <input type="text" id="monthlyRentFee" placeholder="請輸入您的月租金" value="0">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="total_investment_fee">總投資金額</label>
-                  <input type="text" id="total_investment_fee" name="total_investment_fee" placeholder="請輸入您的總投資金額" value="0">
+                  <label class="form_text_title" for="totalInvestmentFee">總投資金額</label>
+                  <input type="text" id="totalInvestmentFee" placeholder="請輸入您的總投資金額" value="0">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="money_rate_result">計算結果-租金報酬率</label>
-                  <input type="text" id="money_rate_result" name="money_rate_result" value="0">
+                  <label class="form_text_title" for="moneyRateResult">計算結果-租金報酬率</label>
+                  <input type="text" id="textMoneyRateResult"  value="0" readonly>
                </div>
-            </form>
-            <a href="#" class="speech_btn">開始計算</a>
+            <a href="#" class="speech_btn" id="moneyRateResultBtn">開始計算</a>
          </div>
       </div>
-   </section>
+   </section> 
+ 
+
+   
 
    <!-- ... Footer ... -->
    <footer class="footer_box">
@@ -344,6 +346,7 @@
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/analysis.js"></script>
 </body>

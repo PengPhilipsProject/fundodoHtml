@@ -57,7 +57,7 @@ function loanResultCompute(){
 		  investmentRate = investmentRate<0?0:investmentRate;
 		  console.log(investmentRate);
 		  $("#investmentRate").val(investmentRate);			  
-
+  
 	  }  
 	}
 	else{

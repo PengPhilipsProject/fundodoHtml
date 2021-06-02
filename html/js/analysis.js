@@ -9,8 +9,6 @@ function loanResultCompute(){
 	monthlyRate = $("#monthlyRate").val();
 	loanYearRate = $("#loanYearRate").val();
 	
-	debugger;
-	
 	var filedArr = [];
 
     filedArr.push(houseFee1,ownMoney,houseDecorateFee1,monthlyRate,loanYearRate);
@@ -79,7 +77,7 @@ function moneyRateResultCompute(){
 
     filedArr.push(houseFee2,houseDecorateFee2,monthlyRentFee,totalInvestmentFee,textMoneyRateResult);
 	var flag = checkVal(filedArr);
-	debugger;
+
 	if(flag===true){
 			
 	  var flag1 = checkInteger(filedArr);
@@ -124,10 +122,99 @@ function moneyRateResultCompute(){
 	}	
 
 }
+//卡債
+var carDebtBalance="", carDebtBalanceResult="";
+function cardDebtInterestRateResultCompute(){	
+	carDebtBalance = $("#carDebtBalance").val();
+	carDebtBalanceResult = $("#carDebtBalanceResult").val();
+	
+	var filedArr = [];
 
+    filedArr.push(carDebtBalance);
+	var flag = checkVal(filedArr);
+
+	if(flag===true){
+			
+	  var flag1 = checkInteger(filedArr);
+	
+	  if(flag1===true){
+	  	//卡債餘額
+	  	carDebtBalance = parseFloat(carDebtBalance);
+		carDebtBalance = carDebtBalance<0?0:carDebtBalance;
+
+		console.log(carDebtBalance);						  
+		$("#carDebtBalance").val(carDebtBalance);
+		//計算結果-卡債利息
+		carDebtBalanceResult = parseFloat(carDebtBalance)*0.2/12;
+
+		carDebtBalanceResult = carDebtBalanceResult<0?0:carDebtBalanceResult;
+
+		console.log(carDebtBalanceResult);						  
+		$("#carDebtBalanceResult").val(carDebtBalanceResult);
+
+	  	  }  
+	}
+	else{
+		  alert("請填入數字!");	
+	}		
+
+}
+//房地產內在價值分析
+var yearRent="", rentGrowth="",investmentRate="",investmentRateResult="";
+function investmentRateResultCompute(){	
+	yearRent = $("#yearRent").val();
+	rentGrowth = $("#rentGrowth").val();
+	investmentRate = $("#investmentRate").val();
+	investmentRateResult = $("#investmentRateResult").val();
+	
+	var filedArr = [];
+
+    filedArr.push(yearRent,rentGrowth,investmentRate);
+	var flag = checkVal(filedArr);
+
+	if(flag===true){
+			
+	  var flag1 = checkInteger(filedArr);
+	
+	  if(flag1===true){
+	  	//目前年度租金
+	  	yearRent  = parseFloat(yearRent);
+		yearRent  = yearRent<0?0:yearRent;
+
+		console.log(yearRent);						  
+		$("#yearRent").val(yearRent);
+		//租金成長率
+		rentGrowth = parseFloat(rentGrowth)/100;
+
+		rentGrowth = rentGrowth<0?0:rentGrowth;
+
+		console.log(rentGrowth);						  
+		$("#rentGrowth").val(rentGrowth);
+		//投資報酬率
+		investmentRate = parseFloat(investmentRate)/100;
+
+		investmentRate = investmentRate<0?0:investmentRate;
+
+		console.log(investmentRate);						  
+		$("#investmentRate").val(investmentRate);
+		//計算結果-未來租金現值
+		investmentRateResult = parseFloat(investmentRate)-parseFloat(rentGrowth);
+		investmentRate = 1+parseFloat(investmentRate);
+		investmentRateResult = (parseFloat(yearRent)/parseFloat(investmentRateResult))*parseFloat(investmentRate);
+
+		investmentRateResult = investmentRateResult<0?0:investmentRateResult;
+
+		console.log(investmentRateResult);						  
+		$("#investmentRateResult").val(investmentRateResult);
+
+	  	  }  
+	}
+	else{
+		  alert("請填入數字!");	
+	}		
+
+}
 //loanResultBtn investmentRateBtn  moneyRateResultBtn
-
-
 $("#loanResultBtn").on("click",function(){
     loanResultCompute();
 });
@@ -135,3 +222,12 @@ $("#loanResultBtn").on("click",function(){
 $("#moneyRateResultBtn").on("click",function(){
     moneyRateResultCompute();
 });
+
+$("#cardDebtInterestRateResultBtn").on("click",function(){
+    cardDebtInterestRateResultCompute();
+});
+
+$("#investmentRateResultBtn").on("click",function(){
+    investmentRateResultCompute();
+});
+

@@ -187,8 +187,10 @@ function investmentRateResultCompute(){
 		$("#yearRent").val(yearRent);
 		//租金成長率
 		rentGrowth = parseFloat(rentGrowth)/100;
+		
+	    rentGrowth = Math.round(rentGrowth * 100)/100;
 
-		rentGrowth = rentGrowth<0?0:rentGrowth;
+		//rentGrowth = rentGrowth<0?0:rentGrowth;
 
 		console.log(rentGrowth);						  
 		$("#rentGrowth").val(rentGrowth);
@@ -203,8 +205,6 @@ function investmentRateResultCompute(){
 		investmentRateResult = parseFloat(investmentRate)-parseFloat(rentGrowth);
 		investmentRate = 1+parseFloat(investmentRate);
 		investmentRateResult = (parseFloat(yearRent)/parseFloat(investmentRateResult))*parseFloat(investmentRate);
-
-		investmentRateResult = investmentRateResult<0?0:investmentRateResult;
 
 		console.log(investmentRateResult);						  
 		$("#investmentRateResult").val(investmentRateResult);

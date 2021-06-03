@@ -183,7 +183,7 @@
                   <input type="text" id="cardDebt" placeholder="請輸入您的卡債利息">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="textMonthlyBalanceResult">計算結果-每月收支平衡</label>
+                  <label class="form_text_title" for="textMonthlyBalanceResult">計算結果-每月收支平衡(單位:元)</label>
                   <input type="text" id="textMonthlyBalanceResult" value="0" readonly>
                </div>
             <a href="#" class="speech_btn" id="btnMonthlyBalanceResult" >開始計算</a>
@@ -195,8 +195,8 @@
                   <input type="text" id="carDebtBalance" placeholder="請輸入您的卡債餘額">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="carDebtBalanceResult">計算結果-卡債利息</label>
-                  <input type="text" id="carDebtBalanceResult">
+                  <label class="form_text_title" for="carDebtBalanceResult">計算結果-卡債利息(%)</label>
+                  <input type="text" id="carDebtBalanceResult" value="0" readonly>
                </div>
             </form>
             <a href="#" class="speech_btn" id="cardDebtInterestRateResultBtn">開始計算</a>
@@ -207,7 +207,7 @@
             <h2 class="news_main_title">房地產內在價值分析</h2>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="yearRent">目前年度租金</label>
-                  <input type="text" id="yearRent" placeholder="請輸入您的目前年度租金">
+                  <input type="text" id="yearRent" placeholder="請輸入您的目前年度租金" >
                </div>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="rentGrowth">租金成長率</label>
@@ -218,8 +218,8 @@
                   <input type="text" id="investmentRate"  placeholder="請輸入您的投資報酬率">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="investmentRateResult">計算結果-未來租金現值</label>
-                  <input type="text" id="investmentRateResult">
+                  <label class="form_text_title" for="investmentRateResult">計算結果-未來租金現值(單位:元)</label>
+                  <input type="text" id="investmentRateResult" value="0" readonly>
                </div>
             <a href="#" class="speech_btn" id="investmentRateResultBtn">開始計算</a>
          </div>
@@ -230,6 +230,7 @@
          <div class="speech_form no_margin_top">
             <h2 class="news_main_title">貸款比率分析</h2>
                <div class="form_text clearfix">
+
                   <label class="form_text_title" for="houseFee1">房屋金額</label>
                   <input type="text" id="houseFee1" placeholder="請輸入您的房屋金額">
                </div>
@@ -250,7 +251,7 @@
                   <input type="text" id="loanYearRate" placeholder="請輸入您的貸款年利率">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="loanResult">計算結果-貸款</label>
+                  <label class="form_text_title" for="loanResult">計算結果-貸款(單位:元)</label>
                   <input type="text" id="textLoanResult" value="0" readonly>
                </div>
           
@@ -259,19 +260,19 @@
             <h2 class="news_main_title">投資報酬率分析</h2>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="yearRentFee">租金年收入</label>
-                  <input type="text" id="yearRentFee" readonly>
+                  <input type="text" id="yearRentFee" readonly value="0">
                </div>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="yearRate">一年利息</label>
-                  <input type="text" id="yearRate" readonly>
+                  <input type="text" id="yearRate" readonly value="0">
                </div>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="yearTotalFee">每年淨收入</label>
-                  <input type="text" id="yearTotalFee" readonly>
+                  <input type="text" id="yearTotalFee" readonly value="0">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="investmentRate">計算結果-投資報酬率</label>
-                  <input type="text" id="investmentRate" value="0" readonly>
+                  <label class="form_text_title" >計算結果-投資報酬率(%)</label>
+                  <input type="text" id="textInvestmentRate" value="0" readonly>
                </div>
             <!-- <a href="#" class="speech_btn" id="investmentRateBtn">開始計算</a> -->
 			
@@ -282,22 +283,22 @@
             <h2 class="news_main_title">租金報酬率分析</h2>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="houseFee2">房屋金額</label>
-                  <input type="text" id="houseFee2" placeholder="請輸入您的房屋金額" value="0" >
+                  <input type="text" id="houseFee2"  placeholder="請輸入您的房屋金額" >
                </div>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="houseDecorateFee2">裝潢費用</label>
-                  <input type="text" id="houseDecorateFee2" placeholder="請輸入您的裝潢費用" value="0">
+                  <input type="text" id="houseDecorateFee2" placeholder="請輸入您的裝潢費用">
                </div>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="monthlyRentFee">月租金</label>
-                  <input type="text" id="monthlyRentFee" placeholder="請輸入您的月租金" value="0">
+                  <input type="text" id="monthlyRentFee"  placeholder="請輸入您的月租金">
                </div>
                <div class="form_text clearfix">
                   <label class="form_text_title" for="totalInvestmentFee">總投資金額</label>
-                  <input type="text" id="totalInvestmentFee" placeholder="請輸入您的總投資金額" value="0">
+                  <input type="text" id="totalInvestmentFee"  placeholder="請輸入您的總投資金額">
                </div>
                <div class="form_text clearfix">
-                  <label class="form_text_title" for="moneyRateResult">計算結果-租金報酬率</label>
+                  <label class="form_text_title" for="moneyRateResult">計算結果-租金報酬率(%)</label>
                   <input type="text" id="textMoneyRateResult"  value="0" readonly>
                </div>
             <a href="#" class="speech_btn" id="moneyRateResultBtn">開始計算</a>

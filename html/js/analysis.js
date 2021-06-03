@@ -17,7 +17,7 @@ function loanResultCompute(){
 	//console.log(Number.isInteger(parseInt(invoice)));  
 	
 	if(flag===true){
-		
+	debugger;
 	  var flag1 = checkInteger(filedArr);
 	
 	  if(flag1===true){
@@ -50,11 +50,12 @@ function loanResultCompute(){
 		  investmentRate = parseFloat(ownMoney)+parseFloat(houseDecorateFee1);
 		  console.log(investmentRate);
 		  investmentRate = parseFloat(yearTotalFee)/parseFloat(investmentRate)*100;
-		  investmentRate = Math.round(investmentRate * 10);
+		  investmentRate = Math.round(investmentRate * 10)/10;
 
 		  investmentRate = investmentRate<0?0:investmentRate;
 		  console.log(investmentRate);
-		  $("#investmentRate").val(investmentRate);			  
+		  debugger;
+		  $("#textInvestmentRate").val(investmentRate);	
   
 	  }  
 	}
@@ -110,7 +111,8 @@ function moneyRateResultCompute(){
 		$("#totalInvestmentFee").val(totalInvestmentFee);
 
 		//租金報酬率=月租金*12/總投資金額
-		textMoneyRateResult = parseFloat(monthlyRentFee)*12/parseFloat(totalInvestmentFee);
+		textMoneyRateResult = parseFloat(monthlyRentFee)*12/parseFloat(totalInvestmentFee)*100;
+		textMoneyRateResult = Math.round(textMoneyRateResult * 100)/100;
 		textMoneyRateResult = textMoneyRateResult<0?0:textMoneyRateResult;
 
 		console.log(textMoneyRateResult);						  
@@ -146,7 +148,7 @@ function cardDebtInterestRateResultCompute(){
 		$("#carDebtBalance").val(carDebtBalance);
 		//計算結果-卡債利息
 		carDebtBalanceResult = parseFloat(carDebtBalance)*0.2/12;
-
+		carDebtBalanceResult = Math.round(carDebtBalanceResult * 100)/100;
 		carDebtBalanceResult = carDebtBalanceResult<0?0:carDebtBalanceResult;
 
 		console.log(carDebtBalanceResult);						  
